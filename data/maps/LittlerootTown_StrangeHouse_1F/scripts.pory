@@ -2,3 +2,54 @@ raw `
 LittlerootTown_StrangeHouse_1F_MapScripts::
 	.byte 0
 `
+script StrangeHouse_Sign_Box {
+    lock
+	msgbox(format("I'd better keep my hands out of that. I don't know what's inside."))
+    release
+}
+
+script StrangeHouse_Tutorial_Book {
+	lock
+	msgbox(format("Would you like to view the Instructions?"),MSGBOX_YESNO)
+	hidemonpic
+    if(var(VAR_RESULT) == YES){
+		msgbox(format("Interact with the bag to your left and choose your favorite Region. This will impact what happens to you next."))   
+    }
+}
+
+script StrangeHouse_RegionBag {
+	    if(!flag(FLAG_STRANGEHOUSE_BAG)){
+        lock
+        message("Where are you from?")
+        dynmultichoice(25, 3, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Kanto", "Johto", "Hoenn", "Sinnoh", "Unova", "Kalos", "Alola", "Galar", "Paldea", "Sevii Isles", "Hisui")
+        closemessage
+        switch(var(VAR_RESULT)){
+            case  0: setvar(VAR_PLAYER_REGION,  0)
+            case  1: setvar(VAR_PLAYER_REGION,  1)
+            case  2: setvar(VAR_PLAYER_REGION,  2)
+            case  3: setvar(VAR_PLAYER_REGION,  3)
+            case  4: setvar(VAR_PLAYER_REGION,  4)
+            case  5: setvar(VAR_PLAYER_REGION,  5)
+            case  6: setvar(VAR_PLAYER_REGION,  6)
+            case  7: setvar(VAR_PLAYER_REGION,  7)
+            case  8: setvar(VAR_PLAYER_REGION,  8)
+            case  9: setvar(VAR_PLAYER_REGION,  9)
+            case 10: setvar(VAR_PLAYER_REGION, 10)
+        }
+        call(StarterFade)
+        release
+    }
+    else{
+        msgbox("Take care of your Pokémon.", MSGBOX_NPC)
+//        setflag(FLAG_SYS_POKEMON_GET)     // in case this script is used to replace birch's bag
+    }
+    end
+}
+
+script StarterFade{
+    fadescreen(FADE_TO_BLACK)
+//    playfanfare(MUS_MOVE_DELETED)
+    delay(10)
+    fadescreen(FADE_FROM_BLACK)
+    return
+}
