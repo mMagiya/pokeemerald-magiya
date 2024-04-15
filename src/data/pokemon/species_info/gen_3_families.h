@@ -3002,7 +3002,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Loudred)
         .levelUpLearnset = sLoudredLevelUpLearnset,
         .teachableLearnset = sLoudredTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_EXPLOUD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_EXPLOUD},
+                                {EVO_ITEM_DAY, ITEM_TOXIC_ORB, SPECIES_EXPLOUD_DAY},
+                                {EVO_ITEM_NIGHT, ITEM_TOXIC_ORB, SPECIES_EXPLOUD_NIGHT}),
     },
 
     [SPECIES_EXPLOUD] =
