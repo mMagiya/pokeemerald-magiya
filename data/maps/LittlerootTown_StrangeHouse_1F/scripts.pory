@@ -4,7 +4,7 @@ LittlerootTown_StrangeHouse_1F_MapScripts::
 `
 script StrangeHouse_Sign_Box {
     lock
-	msgbox(format("I'd better keep my hands out of that. I don't know what's inside."))
+	msgbox(format("I'd better keep my hands out of that. I don't know what's inside."), MSGBOX_NPC)
     release
 }
 
@@ -15,6 +15,8 @@ script StrangeHouse_Tutorial_Book {
     if(var(VAR_RESULT) == YES){
 		msgbox(format("Interact with the bag to your left and choose your favorite Region. This will impact what happens to you next."))   
     }
+    waitmessage
+    release
 }
 
 script StrangeHouse_RegionBag {
@@ -37,11 +39,13 @@ script StrangeHouse_RegionBag {
             case 10: setvar(VAR_PLAYER_REGION, 10)
         }
         call(StarterFade)
-        release
+        waitmessage
+        releaseall
     }
     else{
-        msgbox("Take care of your Pokémon.", MSGBOX_NPC)
+        msgbox("You have already chosen.", MSGBOX_NPC)
 //        setflag(FLAG_SYS_POKEMON_GET)     // in case this script is used to replace birch's bag
+        waitmessage
     }
     end
 }
@@ -49,6 +53,8 @@ script StrangeHouse_RegionBag {
 script StarterFade{
     fadescreen(FADE_TO_BLACK)
 //    playfanfare(MUS_MOVE_DELETED)
+    setflag(FLAG_STRANGEHOUSE_BAG)
+    removeobject(1)
     delay(10)
     fadescreen(FADE_FROM_BLACK)
     return
