@@ -2971,7 +2971,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_PSYCHIC_GEM, SPECIES_RAICHU_ALOLAN}),
+                                {EVO_ITEM_DAY, ITEM_PSYCHIC_GEM, SPECIES_RAICHU_ALOLAN})
     },
 
 #if P_COSPLAY_PIKACHU_FORMS
@@ -11546,7 +11546,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sKoffingLevelUpLearnset,
         .teachableLearnset = sKoffingTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING},
-                                {EVO_ITEM, ITEM_FAIRY_GEM, SPECIES_WEEZING_GALARIAN}),
+                                {EVO_ITEM_HOLD, ITEM_FAIRY_GEM, SPECIES_WEEZING_GALARIAN}),
     },
 
     [SPECIES_WEEZING] =

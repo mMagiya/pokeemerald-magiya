@@ -7785,8 +7785,8 @@ const struct Item gItemsInfo[] =
             "ups the holder's\n"
             "critical-hit ratio."),
         .pocket = POCKET_ITEMS,
-        .type = EVO_HELD_ITEM_TYPE,
-        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
     },

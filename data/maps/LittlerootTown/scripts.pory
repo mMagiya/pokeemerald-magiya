@@ -1021,3 +1021,8 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "Let's go to my LAB.$"
 
 `
+script LittlerootTown_StrangeHouseSign {
+    lockall
+	msgbox(format("What an odd building... I wonder what's inside!"))
+    releaseall
+}
