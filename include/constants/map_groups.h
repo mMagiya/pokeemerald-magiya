@@ -595,6 +595,9 @@
 // gMapGroup_WildArea
 #define MAP_WILD_AREA_ENTRY           (0 | (34 << 8))
 #define MAP_WILDA_AREA_WELCOME_CENTER (1 | (34 << 8))
+#define MAP_WILD_AREA_FIELD_1_1       (2 | (34 << 8))
+#define MAP_WILD_AREA_FIELD_1_2       (3 | (34 << 8))
+#define MAP_WILD_AREA_FIELD_1_3       (4 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 

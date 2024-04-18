@@ -1,0 +1,10 @@
+raw `
+WildArea_Field_1_2_MapScripts::
+	.byte 0
+`
+
+script WildArea_AreaSign_Field2 {
+    lock
+    msgbox("Field 2",MSGBOX_SIGN)
+    release
+}

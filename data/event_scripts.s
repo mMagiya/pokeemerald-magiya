@@ -1078,3 +1078,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/WildArea_Entry/scripts.inc"
 
 	.include "data/maps/WildaArea_WelcomeCenter/scripts.inc"
+	
+	.include "data/maps/WildArea_Field_1_1/scripts.inc"
+
+	.include "data/maps/WildArea_Field_1_2/scripts.inc"
+
+	.include "data/maps/WildArea_Field_1_3/scripts.inc"

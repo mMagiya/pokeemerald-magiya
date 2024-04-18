@@ -1,0 +1,16 @@
+raw `
+WildArea_Field_1_3_MapScripts::
+	.byte 0
+`
+
+script WildArea_AreaSign_Field3 {
+    lock
+    msgbox("Field 3",MSGBOX_SIGN)
+    release
+}
+
+script WildArea_CaveDoor_DittoBlock {
+    lock
+    msgbox("Closed until further notice.", MSGBOX_NPC)
+    release
+}
