@@ -625,9 +625,11 @@
   ],
   "gMapGroup_WildArea": [
     "WildArea_Entry",
-    "WildaArea_WelcomeCenter",
     "WildArea_Field_1_1",
     "WildArea_Field_1_2",
-    "WildArea_Field_1_3"
+    "WildArea_Field_1_3",
+    "WildArea_Forest_1_1",
+    "WildArea_Forest_1_2",
+    "WildArea_Forest_1_3"
   ]
 }

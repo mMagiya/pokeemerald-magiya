@@ -27,6 +27,21 @@
       "map": "MAP_WILD_AREA_FIELD_1_3",
       "offset": 16,
       "direction": "left"
+    },
+    {
+      "map": "MAP_WILD_AREA_FOREST_1_1",
+      "offset": -19,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_WILD_AREA_FOREST_1_2",
+      "offset": 5,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_WILD_AREA_FOREST_1_3",
+      "offset": 29,
+      "direction": "right"
     }
   ],
   "object_events": [

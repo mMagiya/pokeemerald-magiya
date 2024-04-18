@@ -4470,6 +4470,46 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/WildArea_Field_1_3/border.bin",
       "blockdata_filepath": "data/layouts/WildArea_Field_1_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILD_AREA_FIREST_1_1",
+      "name": "WildArea_Firest_1_1_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/WildArea_Firest_1_1/border.bin",
+      "blockdata_filepath": "data/layouts/WildArea_Firest_1_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILD_AREA_FOREST_1_1",
+      "name": "WildArea_Forest_1_1_Layout",
+      "width": 30,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/WildArea_Forest_1_1/border.bin",
+      "blockdata_filepath": "data/layouts/WildArea_Forest_1_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILD_AREA_FOREST_1_2",
+      "name": "WildArea_Forest_1_2_Layout",
+      "width": 30,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/WildArea_Forest_1_2/border.bin",
+      "blockdata_filepath": "data/layouts/WildArea_Forest_1_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILD_AREA_FOREST_1_3",
+      "name": "WildArea_Forest_1_3_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/WildArea_Forest_1_3/border.bin",
+      "blockdata_filepath": "data/layouts/WildArea_Forest_1_3/map.bin"
     }
   ]
 }
