@@ -588,6 +588,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sOinkologneMaleLevelUpLearnset,
         .teachableLearnset = sOinkologneTeachableLearnset,
         .formSpeciesIdTable = sOinkologneFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_OINKOLOGNE_MALE}),
     },
 
     [SPECIES_OINKOLOGNE_FEMALE] =
@@ -641,6 +642,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sOinkologneFemaleLevelUpLearnset,
         .teachableLearnset = sOinkologneTeachableLearnset,
         .formSpeciesIdTable = sOinkologneFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_OINKOLOGNE_FEMALE}),
     },
 #endif //P_FAMILY_LECHONK
 
@@ -6763,6 +6765,115 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sPecharuntTeachableLearnset,
     },
 #endif //P_FAMILY_PECHARUNT
+
+// Begin Magiya Custom Additions
+#if P_FAMILY_LECHONK
+    [SPECIES_BOARMET_MALE] =
+    {
+        .baseHP        = 110,
+        .baseAttack    = 100,
+        .baseDefense   = 75,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 59,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_FAIRY),
+        .catchRate = 100,
+        .expYield = 171,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_LINGERING_AROMA, ABILITY_GLUTTONY, ABILITY_THICK_FAT },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Boarmet"),
+        .cryId = CRY_OINKOLOGNE_MALE,
+        .natDexNum = NATIONAL_DEX_BOARMET,
+        .categoryName = _("Full-Boar"),
+        .height = 10,
+        .weight = 1200,
+        .description = COMPOUND_STRING(
+            "Boarmet is proud of its fine,\n"
+            "glossy skin. It emits a concentrated\n"
+            "scent from the tip of its tail."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BoarmetMale,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_Oinkologne,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_BoarmetMale,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 8,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_BoarmetMale,
+        .shinyPalette = gMonShinyPalette_BoarmetMale,
+        .iconSprite = gMonIcon_BoarmetMale,
+        .iconPalIndex = 1,
+        //FOOTPRINT(Boarmet)
+        .levelUpLearnset = sBoarmetMaleLevelUpLearnset,
+        .teachableLearnset = sBoarmetTeachableLearnset,
+        .formSpeciesIdTable = sBoarmetFormSpeciesIdTable,
+    },
+
+    [SPECIES_BOARMET_FEMALE] =
+    {
+        .baseHP        = 115,
+        .baseAttack    = 90,
+        .baseDefense   = 70,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 59,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_GROUND),
+        .catchRate = 100,
+        .expYield = 171,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(100),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_AROMA_VEIL, ABILITY_GLUTTONY, ABILITY_THICK_FAT },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Boarmet"),
+        .cryId = CRY_OINKOLOGNE_FEMALE,
+        .natDexNum = NATIONAL_DEX_BOARMET,
+        .categoryName = _("Full-Boar"),
+        .height = 10,
+        .weight = 1200,
+        .description = COMPOUND_STRING(
+            "This is a meticulous Pokémon that\n"
+            "likes to keep things tidy. It\n"
+            "shrouds itself in a floral aroma that\n"
+            "soothes the Pokémon around it."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BoarmetFemale,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_Oinkologne,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_BoarmetFemale,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_BoarmetFemale,
+        .shinyPalette = gMonShinyPalette_BoarmetFemale,
+        .iconSprite = gMonIcon_BoarmetFemale,
+        .iconPalIndex = 0,
+        //FOOTPRINT(Boarmet)
+        .levelUpLearnset = sBoarmetFemaleLevelUpLearnset,
+        .teachableLearnset = sBoarmetTeachableLearnset,
+        .formSpeciesIdTable = sBoarmetFormSpeciesIdTable,
+    },
+#endif //P_FAMILY_LECHONK
+// End Magiya Custom Additions
 
 #ifdef __INTELLISENSE__
 };
