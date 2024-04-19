@@ -29,7 +29,7 @@ static const u16 sCharizardFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 static const u16 sCharizardRegionalFormSpeciesIdTable[] = {
-    SPECIES_CHARIZARD,
+    SPECIES_CHARIZARD_REGIONAL,
     SPECIES_CHARIZARD_MEGA_REGIONAL,
     FORM_SPECIES_END,
 };
@@ -47,7 +47,7 @@ static const u16 sBlastoiseFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 static const u16 sBlastoiseRegionalFormSpeciesIdTable[] = {
-    SPECIES_BLASTOISE,
+    SPECIES_BLASTOISE_REGIONAL,
     SPECIES_BLASTOISE_MEGA_REGIONAL,
     FORM_SPECIES_END,
 };
@@ -2190,3 +2190,36 @@ static const u16 sTerapagosFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_TERAPAGOS
+
+
+// Begin Magiya Custom Additions
+#if P_FAMILY_SENTRET
+static const u16 sSentretFormSpeciesIdTable[] = {
+    SPECIES_SENTRET,
+    SPECIES_SENTRET_REGIONAL,
+    FORM_SPECIES_END,
+};
+static const u16 sFurretFormSpeciesIdTable[] = {
+    SPECIES_FURRET,
+    SPECIES_FURRET_REGIONAL,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_SENTRET
+
+#if P_FAMILY_WHISMUR
+static const u16 sExploudFormSpeciesIdTable[] = {
+    SPECIES_EXPLOUD,
+    SPECIES_EXPLOUD_DAY,
+    SPECIES_EXPLOUD_NIGHT,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_WHISMUR
+
+#if P_FAMILY_LECHONK
+static const u16 sBoarmetFormSpeciesIdTable[] = {
+    SPECIES_BOARMET_MALE,
+    SPECIES_BOARMET_FEMALE,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_LECHONK
+// End Magiya Custom Additions
