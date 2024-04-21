@@ -2601,4 +2601,17 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+// Begin Magiya Custom Additions
+    [ABILITY_NOISE_POLLUTION] =
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Noise Pollution"),
+    #else
+        .name = _("NoisePollute"),
+    #endif
+        .description = COMPOUND_STRING("Makes sound moves Poison."),
+        .aiRating = 5,
+    },
+// End Magiya Custom Additions
 };
