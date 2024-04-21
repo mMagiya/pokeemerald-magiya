@@ -411,6 +411,7 @@ bool32 IsDamageMoveUsable(u32 move, u32 battlerAtk, u32 battlerDef)
             return TRUE;
         break;
     case ABILITY_EARTH_EATER:
+    case ABILITY_MEGA_BURST_BLASTOISE:
         if (moveType == TYPE_GROUND)
             return TRUE;
         break;
@@ -761,7 +762,7 @@ s32 AI_WhichMoveBetter(u32 move1, u32 move2, u32 battlerAtk, u32 battlerDef, s32
     // Check if physical moves hurt.
     if (AI_DATA->holdEffects[battlerAtk] != HOLD_EFFECT_PROTECTIVE_PADS
         && (AI_DATA->holdEffects[battlerDef] == HOLD_EFFECT_ROCKY_HELMET
-        || defAbility == ABILITY_IRON_BARBS || defAbility == ABILITY_ROUGH_SKIN))
+        || defAbility == ABILITY_IRON_BARBS || ABILITY_MEGA_BURST_BLASTOISE || defAbility == ABILITY_ROUGH_SKIN))
     {
         if (IS_MOVE_PHYSICAL(move1) && !IS_MOVE_PHYSICAL(move2))
             return 1;
@@ -1410,6 +1411,7 @@ bool32 ShouldSetSun(u32 battlerAtk, u32 atkAbility, u32 holdEffect)
       || atkAbility == ABILITY_FLOWER_GIFT
       || atkAbility == ABILITY_FORECAST
       || atkAbility == ABILITY_LEAF_GUARD
+      || atkAbility == ABILITY_MEGA_BURST_VENUSAUR
       || atkAbility == ABILITY_SOLAR_POWER
       || atkAbility == ABILITY_HARVEST
       || HasMoveEffect(battlerAtk, EFFECT_SOLAR_BEAM)

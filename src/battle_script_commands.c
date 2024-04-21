@@ -2721,10 +2721,10 @@ u8 GetBattlerTurnOrderNum(u8 battler)
 
 static void CheckSetUnburden(u8 battler)
 {
-    if (GetBattlerAbility(battler) == ABILITY_UNBURDEN)
+    if (GetBattlerAbility(battler) == ABILITY_UNBURDEN || ABILITY_MEGA_BURST_CHARIZARD)
     {
         gBattleResources->flags->flags[battler] |= RESOURCE_FLAG_UNBURDEN;
-        RecordAbilityBattle(battler, ABILITY_UNBURDEN);
+        RecordAbilityBattle(battler, ABILITY_UNBURDEN || ABILITY_MEGA_BURST_CHARIZARD);
     }
 }
 
@@ -8519,7 +8519,7 @@ u32 IsFlowerVeilProtected(u32 battler)
 u32 IsLeafGuardProtected(u32 battler)
 {
     if (IsBattlerWeatherAffected(battler, B_WEATHER_SUN))
-        return GetBattlerAbility(battler) == ABILITY_LEAF_GUARD;
+        return GetBattlerAbility(battler) == ABILITY_LEAF_GUARD || ABILITY_MEGA_BURST_VENUSAUR;
     else
         return 0;
 }
@@ -14125,7 +14125,7 @@ static void Cmd_tryswapitems(void)
             }
             else if (oldItemAtk == ITEM_NONE && *newItemAtk != ITEM_NONE)
             {
-                if (GetBattlerAbility(gBattlerAttacker) == ABILITY_UNBURDEN && gBattleResources->flags->flags[gBattlerAttacker] & RESOURCE_FLAG_UNBURDEN)
+                if (GetBattlerAbility(gBattlerAttacker) == (ABILITY_UNBURDEN || ABILITY_MEGA_BURST_CHARIZARD) && gBattleResources->flags->flags[gBattlerAttacker] & RESOURCE_FLAG_UNBURDEN)
                     gBattleResources->flags->flags[gBattlerAttacker] &= ~RESOURCE_FLAG_UNBURDEN;
 
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_SWAP_TAKEN; // nothing -> <- target's item

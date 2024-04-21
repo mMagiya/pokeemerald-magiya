@@ -2613,5 +2613,44 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Makes sound moves Poison."),
         .aiRating = 5,
     },
+
+    [ABILITY_MEGA_BURST_VENUSAUR] =
+    {
+        .name = _("Mega Burst"),
+        .description = COMPOUND_STRING("Has Three Abilities."),
+//        .description = COMPOUND_STRING("Blaze, Leaf Guard and Berserk."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+    },
+
+    [ABILITY_MEGA_BURST_CHARIZARD] =
+    {
+        .name = _("Mega Burst"),
+        .description = COMPOUND_STRING("Has Three Abilities."),
+//        .description = COMPOUND_STRING("Torrent, Adaptability and Unburden."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+    },
+
+    [ABILITY_MEGA_BURST_BLASTOISE] =
+    {
+        .name = _("Mega Burst"),
+        .description = COMPOUND_STRING("Has Three Abilities."),
+//        .description = COMPOUND_STRING("Overgrow, Iron Barbs and Earth Eater."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+    },
 // End Magiya Custom Additions
 };
