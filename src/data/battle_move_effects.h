@@ -2230,4 +2230,11 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 0, // TODO: Assign points
         .encourageEncore = TRUE,
     },
+// Begin Magiya Custom Additions
+    [EFFECT_PIG_OUT] =
+    {
+        .battleScript = BattleScript_EffectPigOut,
+        .battleTvScore = 4,
+    },
+// End Magiya Custom Additions
 };

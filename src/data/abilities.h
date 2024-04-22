@@ -2652,5 +2652,6 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
     },
+
 // End Magiya Custom Additions
 };

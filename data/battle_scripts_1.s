@@ -9944,8 +9944,36 @@ BattleScript_EffectSnow::
 	setsnow
 	goto BattleScript_MoveWeatherChange
 
+@@@@@ Begin Magiya Custom Additions
 BattleScript_ActivateMegaBurst::
 	call BattleScript_AbilityPopUp
 	printfromtable gSwitchInAbilityStringIds
 	waitmessage B_WAIT_TIME_LONG
 	end3
+
+BattleScript_EffectPigOut::
+	call BattleScript_EffectHit_Ret
+	jumpifstatus3 BS_ATTACKER, STATUS3_HEAL_BLOCK, BattleScript_PigOutHealBlock
+	setdrainedhp
+	manipulatedamage DMG_BIG_ROOT
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_IGNORE_DISGUISE
+	jumpifability BS_TARGET, ABILITY_LIQUID_OOZE, BattleScript_PigOutLiquidOoze
+	setbyte cMULTISTRING_CHOOSER, B_MSG_ABSORB
+	goto BattleScript_PigOutUpdateHp
+BattleScript_PigOutLiquidOoze::
+	call BattleScript_AbilityPopUpTarget
+	manipulatedamage DMG_CHANGE_SIGN
+	setbyte cMULTISTRING_CHOOSER, B_MSG_ABSORB_OOZE
+BattleScript_PigOutUpdateHp::
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	jumpifmovehadnoeffect BattleScript_PigOutTryFainting
+	printfromtable gAbsorbDrainStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_PigOutTryFainting::
+	tryfaintmon BS_ATTACKER
+BattleScript_PigOutHealBlock::
+	tryfaintmon BS_TARGET
+	goto BattleScript_MoveEnd
+
+	

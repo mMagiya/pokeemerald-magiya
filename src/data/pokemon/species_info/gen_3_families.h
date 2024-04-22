@@ -9942,10 +9942,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_EXPLOUD_DAY] =
     {
         .baseHP        = 104,
-        .baseAttack    = 91,
+        .baseAttack    = 81,
         .baseDefense   = 63,
         .baseSpeed     = 68,
-        .baseSpAttack  = 91,
+        .baseSpAttack  = 101,
         .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 73 : 63,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_POISON),
         .catchRate = 45,
@@ -10002,10 +10002,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_EXPLOUD_NIGHT] =
     {
         .baseHP        = 104,
-        .baseAttack    = 91,
+        .baseAttack    = 101,
         .baseDefense   = 63,
         .baseSpeed     = 68,
-        .baseSpAttack  = 91,
+        .baseSpAttack  = 81,
         .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 73 : 63,
         .types = MON_TYPES(TYPE_DARK, TYPE_POISON),
         .catchRate = 45,
