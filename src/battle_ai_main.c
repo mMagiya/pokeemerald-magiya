@@ -2803,6 +2803,13 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 }
                 RETURN_SCORE_MINUS(10);
                 break;
+            case ABILITY_MUD_ARMOR:
+                if (moveType == TYPE_FIRE && GetNoOfHitsToKOBattler(battlerAtk, battlerDef, AI_THINKING_STRUCT->movesetIndex) >= 4)
+                {
+                    RETURN_SCORE_PLUS(WEAK_EFFECT);
+                }
+                RETURN_SCORE_MINUS(10);
+                break;
             case ABILITY_FLASH_FIRE:
                 if (moveType == TYPE_FIRE
                     && HasMoveWithType(battlerAtkPartner, TYPE_FIRE)

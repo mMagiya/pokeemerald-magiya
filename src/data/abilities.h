@@ -2653,5 +2653,23 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeOverwritten = TRUE,
     },
 
+    [ABILITY_FORAGER] = 
+    {
+        .name = _("Forager"),
+        .description = COMPOUND_STRING("Cheek Pouch and Harvest."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+    },
+
+    [ABILITY_MUD_ARMOR] =
+    {
+        .name = _("Mud Armor"),
+        .description = COMPOUND_STRING("Water and Fire change DEF."),
+        .aiRating = 6,
+    },
 // End Magiya Custom Additions
 };

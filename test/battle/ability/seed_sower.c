@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Seed Sower sets up Grassy Terrain when hit by an attack")
     }
 }
 
-#define ABILITY_PARAM(n)(abilities[n] = (k == n) ? ABILITY_SEED_SOWER : ABILITY_HARVEST)
+#define ABILITY_PARAM(n)(abilities[n] = (k == n) ? ABILITY_SEED_SOWER : (ABILITY_HARVEST || ABILITY_FORAGER))
 #define MOVE_HIT(target, position)                      \
 {                                                       \
     HP_BAR(target);                                     \
