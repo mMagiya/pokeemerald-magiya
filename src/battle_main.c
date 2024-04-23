@@ -6065,6 +6065,14 @@ void SetTypeBeforeUsingMove(u32 move, u32 battlerAtk)
     {
         gBattleStruct->dynamicMoveType = TYPE_DARK | F_DYNAMIC_TYPE_SET;
     }
+/* // Begin Magiya Custom Additions
+    else if (gMovesInfo[move].type == TYPE_GRASS  && (attackerAbility == ABILITY_INSECTIVORE && (ateType = TYPE_GRASS)))
+    {
+        gBattleStruct->dynamicMoveType = ateType | F_DYNAMIC_TYPE_SET;
+        if (!IsDynamaxed(battlerAtk))
+            gBattleStruct->ateBoost[battlerAtk] = 1;
+    }
+// End Magiya Custom Additions */
 
     GET_MOVE_TYPE(move, moveType);
     if ((gFieldStatuses & STATUS_FIELD_ION_DELUGE && moveType == TYPE_NORMAL)
