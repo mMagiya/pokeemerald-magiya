@@ -828,6 +828,7 @@ extern const u8 BattleScript_EffectUpperHand[];
 extern const u8 BattleScript_EffectTidyUp[];
 // Begin Magiya Custom Additions
 extern const u8 BattleScript_EffectPigOut[];
+extern const u8 BattleScript_EffectWorldCoil[];
 // End Magiya Custom Additions
 
 #endif // GUARD_BATTLE_SCRIPTS_H

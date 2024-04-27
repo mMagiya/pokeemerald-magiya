@@ -2215,6 +2215,16 @@ static const u16 sExploudFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_WHISMUR
 
+#if P_FAMILY_RAYQUAZA
+static const u16 sRayquazaRegionalFormSpeciesIdTable[] = {
+    SPECIES_RAYQUAZA_REGIONAL,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_RAYQUAZA_MEGA_REGIONAL,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_RAYQUAZA
+
 #if P_FAMILY_LECHONK
 static const u16 sBoarmetFormSpeciesIdTable[] = {
     SPECIES_BOARMET_MALE,

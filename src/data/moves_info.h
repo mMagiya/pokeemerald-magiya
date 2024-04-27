@@ -21096,5 +21096,29 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_GROWTH},
     },
+
+    [MOVE_WORLD_COIL] =
+    {
+        .name = COMPOUND_STRING("World Coil"),
+        .description = COMPOUND_STRING(
+            "The user coils its body around\n"
+            "the world, raising defenses."),
+        .effect = EFFECT_WORLD_COIL,
+        .power = 0,
+        .type = TYPE_NORMAL,
+        .accuracy = 0,
+        .pp = 10,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .metronomeBanned = TRUE,
+        .snatchAffected = TRUE,
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
 // End Magiya Custom Additions
 };

@@ -3836,7 +3836,8 @@ bool32 TryChangeBattleWeather(u32 battler, u32 weatherEnumId, bool32 viaAbility)
     if (gBattleWeather & B_WEATHER_PRIMAL_ANY
         && battlerAbility != ABILITY_DESOLATE_LAND
         && battlerAbility != ABILITY_PRIMORDIAL_SEA
-        && battlerAbility != ABILITY_DELTA_STREAM)
+        && battlerAbility != ABILITY_DELTA_STREAM
+        && battlerAbility != ABILITY_WORLD_SERPENT)
     {
         return FALSE;
     }
@@ -4646,6 +4647,19 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             {
                 BattleScriptPushCursorAndCallback(BattleScript_DeltaStreamActivates);
                 effect++;
+            }
+            break;
+        case ABILITY_WORLD_SERPENT:    // May or may not work ; needs testing
+            if (TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_ElectricSurgeActivates);
+                if (TryChangeBattleWeather(battler, ENUM_WEATHER_RAIN_PRIMAL, TRUE))
+                {
+                    BattleScriptPushCursorAndCallback(BattleScript_PrimordialSeaActivates);
+                    effect++;
+                }
+                effect++;
+//                break;
             }
             break;
         case ABILITY_VESSEL_OF_RUIN:

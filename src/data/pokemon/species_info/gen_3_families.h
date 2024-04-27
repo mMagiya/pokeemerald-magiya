@@ -10059,6 +10059,131 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sExploudNightTeachableLearnset,
     },
 #endif //P_FAMILY_WHISMUR
+
+#if P_FAMILY_RAYQUAZA
+    [SPECIES_RAYQUAZA_REGIONAL] =
+    {
+        .baseHP        = 135,
+        .baseAttack    = 100,
+        .baseDefense   = 80,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 200,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 340,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 306,
+    #else
+        .expYield = 220,
+    #endif
+        .evYield_HP = 1,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_FILTER, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Rayquaza"),
+        .cryId = CRY_RAYQUAZA,
+        .natDexNum = NATIONAL_DEX_RAYQUAZA,
+        .categoryName = _("Sky High"),
+        .height = 70,
+        .weight = 2065,
+        .description = COMPOUND_STRING(
+            "A Pokémon that wraps endlessly around\n"
+            "the World. It is said it will be\n"
+            "the key to Ragnarok."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 448,
+        .trainerOffset = 12,
+        .frontPic = gMonFrontPic_Rayquaza_Regional,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Rayquaza,
+        .frontAnimId = ANIM_H_SHAKE,
+        .frontAnimDelay = 60,
+        .enemyMonElevation = 6,
+        .backPic = gMonBackPic_Rayquaza_Regional,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
+        .palette = gMonPalette_Rayquaza_Regional,
+        .shinyPalette = gMonShinyPalette_Rayquaza_Regional,
+        .iconSprite = gMonIcon_Rayquaza_Regional,
+        .iconPalIndex = 1,
+        FOOTPRINT(Rayquaza)
+        .isLegendary = TRUE,
+        .levelUpLearnset = sRayquazaRegionalLevelUpLearnset,
+        .teachableLearnset = sRayquazaRegionalTeachableLearnset,
+        .formSpeciesIdTable = sRayquazaRegionalFormSpeciesIdTable,
+        .formChangeTable = sRayquazaRegionalFormChangeTable,
+    },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_RAYQUAZA_MEGA_REGIONAL] =
+    {
+        .baseHP        = 135,
+        .baseAttack    = 130,
+        .baseDefense   = 90,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 220,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 390 : 351,
+        .evYield_HP = 1,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_WORLD_SERPENT, ABILITY_WORLD_SERPENT, ABILITY_WORLD_SERPENT },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Rayquaza"),
+        .cryId = CRY_RAYQUAZA,
+        .natDexNum = NATIONAL_DEX_RAYQUAZA,
+        .categoryName = _("Sky High"),
+        .height = 108,
+        .weight = 3920,
+        .description = COMPOUND_STRING(
+            "When exposed to Mega Energy, Rayquaza's\n"
+            "potential to cause Ragnarok was activated.\n"
+            "Unless stopped, it will cause the end\n"
+            "of the the world."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 448,
+        .trainerOffset = 12,
+        .frontPic = gMonFrontPic_RayquazaMega_Regional,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_RayquazaMega,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 4,
+        .backPic = gMonBackPic_RayquazaMega_Regional,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_RayquazaMega_Regional,
+        .shinyPalette = gMonShinyPalette_RayquazaMega_Regional,
+        .iconSprite = gMonIcon_RayquazaMega_Regional,
+        .iconPalIndex = 1,
+        FOOTPRINT(Rayquaza)
+        .isLegendary = TRUE,
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sRayquazaRegionalLevelUpLearnset,
+        .teachableLearnset = sRayquazaRegionalTeachableLearnset,
+        .formSpeciesIdTable = sRayquazaRegionalFormSpeciesIdTable,
+        .formChangeTable = sRayquazaRegionalFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
+#endif //P_FAMILY_RAYQUAZA
 // End Magiya Custom Additions
 
 #ifdef __INTELLISENSE__

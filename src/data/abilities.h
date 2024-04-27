@@ -2668,8 +2668,24 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_MUD_ARMOR] =
     {
         .name = _("Mud Armor"),
-        .description = COMPOUND_STRING("Water and Fire change DEF."),
+        .description = COMPOUND_STRING("Water and Fire change DEFs."),
         .aiRating = 6,
+    },
+
+    [ABILITY_WORLD_SERPENT] =
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("World Serpent"),
+    #else
+        .name = _("WorldSerpent"),
+    #endif
+        .description = COMPOUND_STRING("Starts Ragnarok in battle."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
     },
 // End Magiya Custom Additions
 };

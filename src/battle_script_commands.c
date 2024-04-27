@@ -10286,7 +10286,7 @@ static void Cmd_various(void)
         {
             u32 ability = GetBattlerAbility(i);
             if (((ability == ABILITY_DESOLATE_LAND && gBattleWeather & B_WEATHER_SUN_PRIMAL)
-             || (ability == ABILITY_PRIMORDIAL_SEA && gBattleWeather & B_WEATHER_RAIN_PRIMAL)
+             || (ability == (ABILITY_PRIMORDIAL_SEA || ABILITY_WORLD_SERPENT) && gBattleWeather & B_WEATHER_RAIN_PRIMAL)
              || (ability == ABILITY_DELTA_STREAM && gBattleWeather & B_WEATHER_STRONG_WINDS))
              && IsBattlerAlive(i))
                 shouldNotClear = TRUE;

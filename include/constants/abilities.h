@@ -344,10 +344,11 @@
 #define ABILITY_MEGA_BURST_VENUSAUR     313
 #define ABILITY_MEGA_BURST_CHARIZARD    314
 #define ABILITY_MEGA_BURST_BLASTOISE    315
-#define ABILITY_FORAGER                316
+#define ABILITY_FORAGER                 316
 #define ABILITY_MUD_ARMOR               317
+#define ABILITY_WORLD_SERPENT           318
 
-#define ABILITIES_COUNT_CUSTOM          318
+#define ABILITIES_COUNT_CUSTOM          319
 // End Magiya Custom Additions
 
 #define ABILITIES_COUNT ABILITIES_COUNT_CUSTOM

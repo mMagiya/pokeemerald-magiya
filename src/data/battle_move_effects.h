@@ -2236,5 +2236,12 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectPigOut,
         .battleTvScore = 4,
     },
+
+    [EFFECT_WORLD_COIL] =
+    {
+        .battleScript = BattleScript_EffectWorldCoil,
+        .battleTvScore = 0, // TODO: Assign points
+        .encourageEncore = TRUE,
+    },
 // End Magiya Custom Additions
 };

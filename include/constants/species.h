@@ -1647,8 +1647,10 @@
 #define SPECIES_FURRET_EVO                              SPECIES_MIMIKYU_TOTEM_BUSTED + 15
 #define SPECIES_EXPLOUD_DAY                             SPECIES_MIMIKYU_TOTEM_BUSTED + 16
 #define SPECIES_EXPLOUD_NIGHT                           SPECIES_MIMIKYU_TOTEM_BUSTED + 17
-#define SPECIES_BOARMET_MALE                            SPECIES_MIMIKYU_TOTEM_BUSTED + 18
-#define SPECIES_BOARMET_FEMALE                          SPECIES_MIMIKYU_TOTEM_BUSTED + 19
+#define SPECIES_RAYQUAZA_REGIONAL                       SPECIES_MIMIKYU_TOTEM_BUSTED + 18
+#define SPECIES_RAYQUAZA_MEGA_REGIONAL                  SPECIES_MIMIKYU_TOTEM_BUSTED + 19
+#define SPECIES_BOARMET_MALE                            SPECIES_MIMIKYU_TOTEM_BUSTED + 20
+#define SPECIES_BOARMET_FEMALE                          SPECIES_MIMIKYU_TOTEM_BUSTED + 21
 // End Magiya Custom Additions
 
 #define SPECIES_EGG                                     SPECIES_BOARMET_FEMALE + 1

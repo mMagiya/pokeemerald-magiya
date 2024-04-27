@@ -13206,6 +13206,25 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_Exploud_Night[] = INCBIN_U8("graphics/pokemon/exploud/night/icon.4bpp");
 #endif //P_FAMILY_WHISMUR
 
+#if P_FAMILY_RAYQUAZA
+    const u32 gMonFrontPic_Rayquaza_Regional[] = INCBIN_U32("graphics/pokemon/rayquaza/regional/anim_front.4bpp.lz");
+    const u32 gMonPalette_Rayquaza_Regional[] = INCBIN_U32("graphics/pokemon/rayquaza/regional/normal.gbapal.lz");
+    const u32 gMonBackPic_Rayquaza_Regional[] = INCBIN_U32("graphics/pokemon/rayquaza/regional/back.4bpp.lz");
+    const u32 gMonShinyPalette_Rayquaza_Regional[] = INCBIN_U32("graphics/pokemon/rayquaza/regional/shiny.gbapal.lz");
+    const u8 gMonIcon_Rayquaza_Regional[] = INCBIN_U8("graphics/pokemon/rayquaza/regional/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Rayquaza_Regional[] = INCBIN_U8("graphics/pokemon/rayquaza/regional/footprint.1bpp");
+#endif //P_FOOTPRINTS
+
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_RayquazaMega_Regional[] = INCBIN_U32("graphics/pokemon/rayquaza/regional/mega/front.4bpp.lz");
+    const u32 gMonPalette_RayquazaMega_Regional[] = INCBIN_U32("graphics/pokemon/rayquaza/regional/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_RayquazaMega_Regional[] = INCBIN_U32("graphics/pokemon/rayquaza/regional/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_RayquazaMega_Regional[] = INCBIN_U32("graphics/pokemon/rayquaza/regional/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_RayquazaMega_Regional[] = INCBIN_U8("graphics/pokemon/rayquaza/regional/mega/icon.4bpp");
+#endif //P_MEGA_EVOLUTIONS
+#endif //P_FAMILY_RAYQUAZA
+
 #if P_FAMILY_LECHONK
     const u32 gMonFrontPic_BoarmetMale[] = INCBIN_U32("graphics/pokemon/boarmet/front.4bpp.lz");
     const u32 gMonPalette_BoarmetMale[] = INCBIN_U32("graphics/pokemon/boarmet/normal.gbapal.lz");

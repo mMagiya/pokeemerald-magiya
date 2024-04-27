@@ -4107,6 +4107,13 @@ static u32 AI_CalcMoveScore(u32 battlerAtk, u32 battlerDef, u32 move)
         IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPATK, &score);
         IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ATK, &score);
         break;
+    case EFFECT_WORLD_COIL:
+        if (aiData->holdEffects[battlerAtk] == HOLD_EFFECT_RESTORE_STATS)
+            ADJUST_SCORE(WEAK_EFFECT);
+
+        IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_DEF, &score);
+        IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPDEF, &score);
+        break;
     case EFFECT_TIDY_UP:
         IncreaseTidyUpScore(battlerAtk, battlerDef, move, &score);
     case EFFECT_DRAGON_DANCE:
@@ -4739,6 +4746,7 @@ static s32 AI_SetupFirstTurn(u32 battlerAtk, u32 battlerDef, u32 move, s32 score
     case EFFECT_SNOWSCAPE:
     case EFFECT_GEOMANCY:
     case EFFECT_VICTORY_DANCE:
+    case EFFECT_WORLD_COIL:
         ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_HIT:
