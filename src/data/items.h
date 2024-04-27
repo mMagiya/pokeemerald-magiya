@@ -5352,6 +5352,21 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
+    [ITEM_XERNETITE] =
+    {
+        .name = _("Xernetite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Xerneas to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+    },
+
 // Gems
 
     [ITEM_NORMAL_GEM] =

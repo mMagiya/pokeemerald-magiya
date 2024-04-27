@@ -13241,4 +13241,29 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_BoarmetFemale[] = INCBIN_U32("graphics/pokemon/boarmet/female/shiny.gbapal.lz");
     const u8 gMonIcon_BoarmetFemale[] = INCBIN_U8("graphics/pokemon/boarmet/female/icon.4bpp");
 #endif //P_FAMILY_LECHONK
+
+#if P_FAMILY_XERNEAS
+    const u32 gMonFrontPic_XerneasNeutralRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/front.4bpp.lz");
+    const u32 gMonPalette_XerneasNeutralRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/normal.gbapal.lz");
+    const u32 gMonBackPic_XerneasNeutralRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/back.4bpp.lz");
+    const u32 gMonShinyPalette_XerneasNeutralRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/shiny.gbapal.lz");
+    const u8 gMonIcon_XerneasNeutralRegional[] = INCBIN_U8("graphics/pokemon/xerneas/regional/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_XerneasRegional[] = INCBIN_U8("graphics/pokemon/xerneas/regional/footprint.1bpp");
+#endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_XerneasActiveRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/active/anim_front.4bpp.lz");
+    const u32 gMonPalette_XerneasActiveRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/active/normal.gbapal.lz");
+    const u32 gMonBackPic_XerneasActiveRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/active/back.4bpp.lz");
+    const u32 gMonShinyPalette_XerneasActiveRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/active/shiny.gbapal.lz");
+    const u8 gMonIcon_XerneasActiveRegional[] = INCBIN_U8("graphics/pokemon/xerneas/regional/active/icon.4bpp");
+
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_XerneasMegaRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/mega/anim_front.4bpp.lz");
+    const u32 gMonPalette_XerneasMegaRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_XerneasMegaRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_XerneasMegaRegional[] = INCBIN_U32("graphics/pokemon/xerneas/regional/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_XerneasMegaRegional[] = INCBIN_U8("graphics/pokemon/xerneas/regional/mega/icon.4bpp");
+#endif //P_MEGA_EVOLUTIONS
+#endif //P_FAMILY_XERNEAS
 // End Magiya Custom Additions

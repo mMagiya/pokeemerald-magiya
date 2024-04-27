@@ -2687,5 +2687,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
     },
+
+    [ABILITY_WORLD_TREE] =
+    {
+        .name = _("Yggdrasil"),
+        .description = COMPOUND_STRING("Boost Fairy, weakens Dragon."),
+        .aiRating = 6,
+    },
 // End Magiya Custom Additions
 };

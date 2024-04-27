@@ -347,8 +347,9 @@
 #define ABILITY_FORAGER                 316
 #define ABILITY_MUD_ARMOR               317
 #define ABILITY_WORLD_SERPENT           318
+#define ABILITY_WORLD_TREE              319
 
-#define ABILITIES_COUNT_CUSTOM          319
+#define ABILITIES_COUNT_CUSTOM          320
 // End Magiya Custom Additions
 
 #define ABILITIES_COUNT ABILITIES_COUNT_CUSTOM

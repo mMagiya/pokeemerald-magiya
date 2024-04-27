@@ -36532,4 +36532,37 @@ static const u16 sBoarmetTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LECHONK
+
+#if P_FAMILY_XERNEAS
+static const u16 sXerneasRegionalTeachableLearnset[] = {
+    MOVE_CALM_MIND,
+    MOVE_CUT,
+    MOVE_DOUBLE_TEAM,
+    MOVE_FACADE,
+    MOVE_FLASH,
+    MOVE_HAIL,
+    MOVE_HYPER_BEAM,
+    MOVE_LIGHT_SCREEN,
+    MOVE_PROTECT,
+    MOVE_PSYCHIC,
+    MOVE_RAIN_DANCE,
+    MOVE_REFLECT,
+    MOVE_REST,
+    MOVE_ROAR,
+    MOVE_SUNNY_DAY,
+    MOVE_THUNDER,
+    MOVE_THUNDERBOLT,
+    MOVE_TOXIC,
+    MOVE_BODY_SLAM,
+    MOVE_ENDURE,
+    MOVE_PSYCH_UP,
+    MOVE_ROCK_SLIDE,
+    MOVE_SLEEP_TALK,
+    MOVE_SNORE,
+    MOVE_SWAGGER,
+    MOVE_SWIFT,
+    MOVE_THUNDER_WAVE,
+    MOVE_UNAVAILABLE,
+};
+#endif //P_FAMILY_XERNEAS
 // End Magiya Custom Additions

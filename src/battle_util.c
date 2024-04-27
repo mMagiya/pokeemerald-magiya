@@ -4429,6 +4429,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_FAIRY_AURA:
+        case ABILITY_WORLD_TREE:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_FAIRYAURA;
@@ -9073,12 +9074,20 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
 
     // field abilities
     if ((IsAbilityOnField(ABILITY_DARK_AURA) && moveType == TYPE_DARK)
-     || (IsAbilityOnField(ABILITY_FAIRY_AURA) && moveType == TYPE_FAIRY))
+     || (IsAbilityOnField(ABILITY_FAIRY_AURA || ABILITY_WORLD_TREE) && moveType == TYPE_FAIRY))
     {
         if (IsAbilityOnField(ABILITY_AURA_BREAK))
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.75));
         else
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.33));
+    }
+
+    if ((IsAbilityOnField(ABILITY_WORLD_TREE) && moveType == TYPE_DRAGON))
+    {
+        if (IsAbilityOnField(ABILITY_AURA_BREAK))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.00));
+        else
+            modifier = uq4_12_multiply(modifier, UQ_4_12(0.75));
     }
 
     // attacker partner's abilities

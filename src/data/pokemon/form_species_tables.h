@@ -2232,4 +2232,13 @@ static const u16 sBoarmetFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_LECHONK
+
+#if P_FAMILY_XERNEAS
+static const u16 sXerneasRegionalFormSpeciesIdTable[] = {
+    SPECIES_XERNEAS_NEUTRAL_REGIONAL,
+    SPECIES_XERNEAS_ACTIVE_REGIONAL,
+    SPECIES_XERNEAS_MEGA_REGIONAL,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_XERNEAS
 // End Magiya Custom Additions
