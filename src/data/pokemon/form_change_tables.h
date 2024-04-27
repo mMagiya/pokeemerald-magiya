@@ -504,6 +504,13 @@ static const struct FormChange sRayquazaFormChangeTable[] = {
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
+
+static const struct FormChange sRayquazaRegionalFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE,    SPECIES_RAYQUAZA_MEGA_REGIONAL, MOVE_WORLD_COIL},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
 #endif //P_FAMILY_RAYQUAZA
 
 #if P_FAMILY_DEOXYS
@@ -805,6 +812,13 @@ static const struct FormChange sAegislashFormChangeTable[] = {
 static const struct FormChange sXerneasFormChangeTable[] = {
     {FORM_CHANGE_BEGIN_BATTLE, SPECIES_XERNEAS_ACTIVE},
     {FORM_CHANGE_END_BATTLE,   SPECIES_XERNEAS_NEUTRAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sXerneasRegionalFormChangeTable[] = {
+    {FORM_CHANGE_BEGIN_BATTLE,                  SPECIES_XERNEAS_ACTIVE_REGIONAL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_XERNEAS_NEUTRAL_REGIONAL},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_XERNEAS_MEGA_REGIONAL, ITEM_XERNETITE},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_XERNEAS

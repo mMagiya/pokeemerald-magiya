@@ -280,3 +280,18 @@ const u8 gOgerponCornerstoneMaskPokedexText[] = _(
     "of stone. Its body is rock-solid,\n"
     "protecting it from all manner of\n"
     "attacks.");
+
+// Begin Magiya Custom Additions
+const u8 gXerneasRegionalPokedexText[] = _(
+    "It is a piece of the World Tree brought\n"
+    "to life in times of great need.\n"
+    "Sometimes, the glow of the Bifrost\n"
+    "can be seen reflected in its horns.");
+
+const u8 gXerneasMegaRegionalPokedexText[] = _(
+    "When all hope seemed lost, the World\n"
+    "Tree's power grew significantly. After\n"
+    "it mixed with Mega Energy, a new form\n"
+    "of Xerneas was born.");
+
+// End Magiya Custom Additions

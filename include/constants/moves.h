@@ -910,7 +910,14 @@
 
 #define MOVES_COUNT_GEN9 848
 
-#define MOVES_COUNT         MOVES_COUNT_GEN9
+// Begin Magiya Custom Additions
+#define MOVE_PIG_OUT        849
+#define MOVE_WORLD_COIL     850
+
+#define MOVES_COUNT_CUSTOM  851
+// End Magiya Custom Additions
+
+#define MOVES_COUNT         MOVES_COUNT_CUSTOM
 
 // Z Moves
 #define MOVE_BREAKNECK_BLITZ (MOVES_COUNT + 0)

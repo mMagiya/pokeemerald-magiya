@@ -2472,7 +2472,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
-    [ABILITY_EMBODY_ASPECT_TEAL] =
+    [ABILITY_EMBODY_ASPECT_TEAL_MASK] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Embody Aspect"),
@@ -2487,7 +2487,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .failsOnImposter = TRUE,
     },
 
-    [ABILITY_EMBODY_ASPECT_HEARTHFLAME] =
+    [ABILITY_EMBODY_ASPECT_HEARTHFLAME_MASK] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Embody Aspect"),
@@ -2502,7 +2502,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .failsOnImposter = TRUE,
     },
 
-    [ABILITY_EMBODY_ASPECT_WELLSPRING] =
+    [ABILITY_EMBODY_ASPECT_WELLSPRING_MASK] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Embody Aspect"),
@@ -2517,7 +2517,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .failsOnImposter = TRUE,
     },
 
-    [ABILITY_EMBODY_ASPECT_CORNERSTONE] =
+    [ABILITY_EMBODY_ASPECT_CORNERSTONE_MASK] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Embody Aspect"),
@@ -2601,4 +2601,98 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+// Begin Magiya Custom Additions
+    [ABILITY_NOISE_POLLUTION] =
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Noise Pollution"),
+    #else
+        .name = _("NoisePollute"),
+    #endif
+        .description = COMPOUND_STRING("Makes sound moves Poison."),
+        .aiRating = 5,
+    },
+
+    [ABILITY_MEGA_BURST_VENUSAUR] =
+    {
+        .name = _("Mega Burst"),
+        .description = COMPOUND_STRING("Has Three Abilities."),
+//        .description = COMPOUND_STRING("Blaze, Leaf Guard and Berserk."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+    },
+
+    [ABILITY_MEGA_BURST_CHARIZARD] =
+    {
+        .name = _("Mega Burst"),
+        .description = COMPOUND_STRING("Has Three Abilities."),
+//        .description = COMPOUND_STRING("Torrent, Adaptability and Unburden."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+    },
+
+    [ABILITY_MEGA_BURST_BLASTOISE] =
+    {
+        .name = _("Mega Burst"),
+        .description = COMPOUND_STRING("Has Three Abilities."),
+//        .description = COMPOUND_STRING("Overgrow, Iron Barbs and Earth Eater."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+    },
+
+    [ABILITY_FORAGER] = 
+    {
+        .name = _("Forager"),
+        .description = COMPOUND_STRING("Cheek Pouch and Harvest."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+    },
+
+    [ABILITY_MUD_ARMOR] =
+    {
+        .name = _("Mud Armor"),
+        .description = COMPOUND_STRING("Water and Fire change DEFs."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_WORLD_SERPENT] =
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("World Serpent"),
+    #else
+        .name = _("WorldSerpent"),
+    #endif
+        .description = COMPOUND_STRING("Starts Ragnarok in battle."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+    },
+
+    [ABILITY_WORLD_TREE] =
+    {
+        .name = _("Yggdrasil"),
+        .description = COMPOUND_STRING("Boost Fairy, weakens Dragon."),
+        .aiRating = 6,
+    },
+// End Magiya Custom Additions
 };
