@@ -1074,17 +1074,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/LittlerootTown_StrangeHouse_1F/scripts.inc"
-
 	.include "data/maps/WildArea_Entry/scripts.inc"
-	
 	.include "data/maps/WildArea_Field_1_1/scripts.inc"
-
 	.include "data/maps/WildArea_Field_1_2/scripts.inc"
-
 	.include "data/maps/WildArea_Field_1_3/scripts.inc"
-
-	.include "data/maps/WildArea_Forest_1_1/scripts.inc"
-
-	.include "data/maps/WildArea_Forest_1_2/scripts.inc"
-
-	.include "data/maps/WildArea_Forest_1_3/scripts.inc"
+	.include "data/maps/WildArea_Cave_1_1/scripts.inc"
+	.include "data/maps/WildArea_Cave_1_2/scripts.inc"

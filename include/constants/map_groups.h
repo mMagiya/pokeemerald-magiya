@@ -593,13 +593,12 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // gMapGroup_WildArea
-#define MAP_WILD_AREA_ENTRY      (0 | (34 << 8))
-#define MAP_WILD_AREA_FIELD_1_1  (1 | (34 << 8))
-#define MAP_WILD_AREA_FIELD_1_2  (2 | (34 << 8))
-#define MAP_WILD_AREA_FIELD_1_3  (3 | (34 << 8))
-#define MAP_WILD_AREA_FOREST_1_1 (4 | (34 << 8))
-#define MAP_WILD_AREA_FOREST_1_2 (5 | (34 << 8))
-#define MAP_WILD_AREA_FOREST_1_3 (6 | (34 << 8))
+#define MAP_WILD_AREA_ENTRY     (0 | (34 << 8))
+#define MAP_WILD_AREA_FIELD_1_1 (1 | (34 << 8))
+#define MAP_WILD_AREA_FIELD_1_2 (2 | (34 << 8))
+#define MAP_WILD_AREA_FIELD_1_3 (3 | (34 << 8))
+#define MAP_WILD_AREA_CAVE_1_1  (4 | (34 << 8))
+#define MAP_WILD_AREA_CAVE_1_2  (5 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 
