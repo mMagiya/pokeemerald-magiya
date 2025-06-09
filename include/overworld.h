@@ -181,4 +181,8 @@ enum ItemObtainFlags
 };
 bool8 GetSetItemObtained(u16 item, enum ItemObtainFlags caseId);
 
+// Begin Community Addons
+void CB2_ReturnToFullScreenStartMenu(void);
+// End Community Addons
+
 #endif // GUARD_OVERWORLD_H

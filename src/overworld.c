@@ -1,6 +1,8 @@
 #include "global.h"
 #include "overworld.h"
 #include "battle_pyramid.h"
+#include "battle_pike.h"
+#include "battle_pyramid_bag.h"
 #include "battle_setup.h"
 #include "berry.h"
 #include "bg.h"
@@ -77,6 +79,9 @@
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
+// Begin Community Additions
+#include "ui_startmenu_full.h"
+// End Community Additions
 
 STATIC_ASSERT((B_FLAG_FOLLOWERS_DISABLED == 0 || OW_FOLLOWERS_ENABLED), FollowersFlagAssignedWithoutEnablingThem);
 
@@ -3709,3 +3714,18 @@ bool8 ScrFunc_settimeofday(struct ScriptContext *ctx)
     SetTimeOfDay(ScriptReadByte(ctx));
     return FALSE;
 }
+
+// Begin Community Addons
+void CB2_ReturnToFullScreenStartMenu(void)
+{
+    FieldClearVBlankHBlankCallbacks();
+
+    if (GetSafariZoneFlag() || InBattlePyramid() || InBattlePike() || InUnionRoom() || InMultiPartnerRoom())
+    {
+        SetMainCallback2(CB2_ReturnToFieldWithOpenMenu);
+        return;
+    }
+
+	StartMenuFull_Init(CB2_ReturnToField);
+}
+// End Community Addons
