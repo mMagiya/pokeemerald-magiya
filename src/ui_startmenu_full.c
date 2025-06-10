@@ -47,6 +47,7 @@
 #include "link.h"
 #include "frontier_pass.h"
 #include "start_menu.h"
+#include "fake_rtc.h"
 
 /*
     Full Screen Start Menu
@@ -1266,7 +1267,8 @@ static void PrintMapNameAndTime(void) //this code is ripped froom different part
     mapDisplayHeader[2] = TEXT_COLOR_TRANSPARENT;
     AddTextPrinterParameterized(WINDOW_TOP_BAR, FONT_NARROW, mapDisplayHeader, x + 152, 1, TEXT_SKIP_DRAW, NULL); // Print Map Name
 
-    RtcCalcLocalTime();
+//    RtcCalcLocalTime();
+    FakeRtc_GetCurrentTime();
 
     hours = gLocalTime.hours;
 
