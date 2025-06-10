@@ -2950,7 +2950,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_NONE, 0, SPECIES_RAICHU_ALOLA}),
+                                {EVO_ITEM, ITEM_PSYCHIC_GEM, SPECIES_RAICHU_ALOLA}),
     },
 
 #if P_COSPLAY_PIKACHU_FORMS
