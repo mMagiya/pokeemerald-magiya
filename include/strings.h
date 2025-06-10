@@ -2426,4 +2426,8 @@ extern const u8 gText_Rename[]; // change nickname from summary screen
 // Switch Caught Mon into Party
 extern const u8 gText_CannotSendMonToBoxHM[];
 
+// Begin Magiya Custom Additions
+extern const u8 gText_YouAlreadyHaveThis[];
+// End Magiya Custom Additions
+
 #endif // GUARD_STRINGS_H

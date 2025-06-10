@@ -1300,3 +1300,7 @@ const u8 gText_PM[] = _("PM");
 const u8 gText_Relearn[] = _("{START_BUTTON} RELEARN"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
 const u8 gText_Rename[] = _("RENAME");
 const u8 gText_CannotSendMonToBoxHM[] = _("Cannot send that mon to the box,\nbecause it knows a HM move.{PAUSE_UNTIL_PRESS}");
+
+// Begin Magiya Custom Additions
+const u8 gText_YouAlreadyHaveThis[] = _("You already have this!{PAUSE_UNTIL_PRESS}");
+// End Magiya Custom Additions
