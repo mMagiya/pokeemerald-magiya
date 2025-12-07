@@ -623,6 +623,7 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_TestingZones": [
-    "LittlerootSouth_MysticGrove"
+    "LittlerootSouth_MysticGrove",
+    "LittlerootSouth_MysticCave"
   ]
 }

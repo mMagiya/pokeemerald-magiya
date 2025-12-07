@@ -46,3 +46,14 @@ script MysticGrove_Meteoro {
 	else{}
 	releaseall
 }
+
+script MysticGrove_Flower {
+	if(!flag(FLAG_MG_FLOWER)){
+		lockall
+		emote_exclamation_mark
+		msgbox(format("HEY!\p\n Get off of my face!"), MSGBOX_NPC)
+		setflag(FLAG_MG_FLOWER)
+		releaseall
+	}
+	else{}
+}

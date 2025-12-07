@@ -133,6 +133,25 @@ MysticGrove_Meteoro_12:
 	goto MysticGrove_Meteoro_5
 
 
+MysticGrove_Flower::
+# 51 "data/maps/LittlerootSouth_MysticGrove/scripts.pory"
+	goto_if_unset FLAG_MG_FLOWER, MysticGrove_Flower_1
+	return
+
+MysticGrove_Flower_1:
+# 52 "data/maps/LittlerootSouth_MysticGrove/scripts.pory"
+	lockall
+# 53 "data/maps/LittlerootSouth_MysticGrove/scripts.pory"
+	emote_exclamation_mark
+# 54 "data/maps/LittlerootSouth_MysticGrove/scripts.pory"
+	msgbox MysticGrove_Flower_Text_0, MSGBOX_NPC
+# 55 "data/maps/LittlerootSouth_MysticGrove/scripts.pory"
+	setflag FLAG_MG_FLOWER
+# 56 "data/maps/LittlerootSouth_MysticGrove/scripts.pory"
+	releaseall
+	return
+
+
 MysticGrove_Chrono_Text_0:
 # 13 "data/maps/LittlerootSouth_MysticGrove/scripts.pory"
 	.string "Change Time?$"
@@ -188,3 +207,9 @@ MysticGrove_Meteoro_Text_6:
 MysticGrove_Meteoro_Text_7:
 # 44 "data/maps/LittlerootSouth_MysticGrove/scripts.pory"
 	.string "METEOROMANCY!$"
+
+MysticGrove_Flower_Text_0:
+# 54 "data/maps/LittlerootSouth_MysticGrove/scripts.pory"
+	.string "HEY!\p"
+	.string "\n"
+	.string "Get off of my face!$"

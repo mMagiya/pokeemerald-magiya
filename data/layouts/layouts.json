@@ -4414,12 +4414,22 @@
     {
       "id": "LAYOUT_LITTLEROOT_SOUTH_MYSTIC_GROVE",
       "name": "LittlerootSouth_MysticGrove_Layout",
-      "width": 24,
+      "width": 56,
       "height": 32,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/LittlerootSouth_MysticGrove/border.bin",
       "blockdata_filepath": "data/layouts/LittlerootSouth_MysticGrove/map.bin"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_SOUTH_MYSTIC_CAVE",
+      "name": "LittlerootSouth_MysticCave_Layout",
+      "width": 33,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/LittlerootSouth_MysticCave/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootSouth_MysticCave/map.bin"
     }
   ]
 }

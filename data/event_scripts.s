@@ -1159,3 +1159,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/LittlerootSouth_MysticGrove/scripts.inc"
+
+	.include "data/maps/LittlerootSouth_MysticCave/scripts.inc"

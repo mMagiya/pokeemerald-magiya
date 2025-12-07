@@ -1702,6 +1702,22 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_MYSTIC_GROVE",
+      "name": "MYSTICAL GROVE",
+      "x": 4,
+      "y": 12,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_MYSTIC_CAVE",
+      "name": "MYSTICAL CAVERN",
+      "x": 4,
+      "y": 12,
+      "width": 1,
+      "height": 1
     }
   ]
 }
