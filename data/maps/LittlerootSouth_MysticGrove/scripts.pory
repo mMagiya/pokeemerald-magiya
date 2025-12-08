@@ -5,7 +5,36 @@ LittlerootSouth_MysticGrove_MapScripts::
 `
 
 mapscripts MysticGrove_MapScripts {
-//	  MAP_SCRIPT_ON_TRANSITION: 
+	MAP_SCRIPT_ON_RETURN_TO_FIELD:MysticGrove_SetWeatherEncounter
+}
+
+script MysticGrove_CheckWeather {
+	lockall
+	msgbox("The current weather is:\n",MSGBOX_NPC)
+	switch(var(VAR_WEATHER_CURRENT)){
+		case 0: msgbox("Clear.", MSGBOX_NPC)
+		case 1: msgbox("Sand.", MSGBOX_NPC)
+		case 2: msgbox("Rain.", MSGBOX_NPC)
+		case 3: msgbox("Thunder.", MSGBOX_NPC)
+		case 4: msgbox("Snow.", MSGBOX_NPC)
+		case 5: msgbox("Fog.", MSGBOX_NPC)
+		default: msgbox("Undefined.")
+	}
+	DrawWholeMapView
+	releaseall
+}
+
+script MysticGrove_SetWeatherEncounter {
+	switch(var(VAR_WEATHER_CURRENT)){
+		default: 
+		case 0: 
+			special 
+		case 1: 
+		case 2: 
+		case 3: 
+		case 4: 
+		case 5: 
+	}
 }
 
 script MysticGrove_Chrono {
@@ -20,7 +49,10 @@ script MysticGrove_Chrono {
 			case 2: fwdtime(07,69)	// Evening
 			case 3: fwdtime(11,9)	// Night
 			}
+		fadescreen(FADE_TO_BLACK)
 		msgbox("CHRONOMANCY!")
+		DrawWholeMapView
+		fadescreen(FADE_FROM_BLACK)
 		}
 	else{}
 	releaseall
@@ -34,26 +66,24 @@ script MysticGrove_Meteoro {
 		closemessage
 		switch(var(VAR_RESULT)){
 			case 0: setweather(WEATHER_NONE)				// Clear
+					setvar(VAR_WEATHER_CURRENT, 0)
 			case 1: setweather(WEATHER_SANDSTORM)			// Sandstorm
+					setvar(VAR_WEATHER_CURRENT, 1)
 			case 2: setweather(WEATHER_RAIN)				// Rain
+					setvar(VAR_WEATHER_CURRENT, 2)
 			case 3: setweather(WEATHER_RAIN_THUNDERSTORM)	// Thunder
+					setvar(VAR_WEATHER_CURRENT, 3)
 			case 4: setweather(WEATHER_SNOW)				// Snow
+					setvar(VAR_WEATHER_CURRENT, 4)
 			case 5: setweather(WEATHER_FOG_HORIZONTAL)		// Fog
+					setvar(VAR_WEATHER_CURRENT, 5)
 			}
 		doweather
+		fadescreen(FADE_TO_BLACK)
 		msgbox("METEOROMANCY!")
+		MysticGrove_SetEncounterTable
+		fadescreen(FADE_FROM_BLACK)
 		}
 	else{}
 	releaseall
-}
-
-script MysticGrove_Flower {
-	if(!flag(FLAG_MG_FLOWER)){
-		lockall
-		emote_exclamation_mark
-		msgbox(format("HEY!\p\n Get off of my face!"), MSGBOX_NPC)
-		setflag(FLAG_MG_FLOWER)
-		releaseall
-	}
-	else{}
 }
