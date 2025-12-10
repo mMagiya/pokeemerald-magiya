@@ -5,7 +5,7 @@ LittlerootSouth_MysticGrove_MapScripts::
 `
 
 mapscripts MysticGrove_MapScripts {
-	MAP_SCRIPT_ON_RETURN_TO_FIELD:MysticGrove_SetWeatherEncounter
+//	MAP_SCRIPT_ON_RETURN_TO_FIELD:MysticGrove_SetWeatherEncounter
 }
 
 script MysticGrove_CheckWeather {
@@ -20,22 +20,27 @@ script MysticGrove_CheckWeather {
 		case 5: msgbox("Fog.", MSGBOX_NPC)
 		default: msgbox("Undefined.")
 	}
-	DrawWholeMapView
+//	DrawWholeMapView
 	releaseall
 }
 
-script MysticGrove_SetWeatherEncounter {
-	switch(var(VAR_WEATHER_CURRENT)){
-		default: 
-		case 0: 
-			special 
-		case 1: 
-		case 2: 
-		case 3: 
-		case 4: 
-		case 5: 
-	}
-}
+//	script MysticGrove_SetWeatherEncounter {
+//		switch(var(VAR_WEATHER_CURRENT)){
+//			default: 
+//			case 0: 
+//				
+//			case 1: 
+//	
+//			case 2: 
+//						
+//			case 3: 
+//	
+//			case 4: 
+//	
+//			case 5: 
+//				
+//		}
+//	}
 
 script MysticGrove_Chrono {
 	lockall
@@ -46,12 +51,12 @@ script MysticGrove_Chrono {
 		switch(var(VAR_RESULT)){
 			case 0: fwdtime(20,9)	// Morning
 			case 1: fwdtime(23,9)	// Day
-			case 2: fwdtime(07,69)	// Evening
-			case 3: fwdtime(11,9)	// Night
+			case 2: fwdtime(07,129)	// Evening
+			case 3: fwdtime(12,9)	// Night
 			}
 		fadescreen(FADE_TO_BLACK)
-		msgbox("CHRONOMANCY!")
-		DrawWholeMapView
+		msgbox("CHRONOMANCY!", MSGBOX_NPC)
+//		DrawWholeMapView
 		fadescreen(FADE_FROM_BLACK)
 		}
 	else{}
@@ -80,8 +85,8 @@ script MysticGrove_Meteoro {
 			}
 		doweather
 		fadescreen(FADE_TO_BLACK)
-		msgbox("METEOROMANCY!")
-		MysticGrove_SetEncounterTable
+		msgbox("METEOROMANCY!", MSGBOX_NPC)
+//		MysticGrove_SetEncounterTable
 		fadescreen(FADE_FROM_BLACK)
 		}
 	else{}

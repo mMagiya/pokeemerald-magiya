@@ -13047,414 +13047,276 @@
         },
         {
           "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
-          "base_label": "gLittlerootSouth_MysticGrove_Morning_Sun",
+          "base_label": "gLittlerootSouth_MysticGrove_Day",
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
               {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_PIDGEY"
+              },
+              {
                 "min_level": 5,
-                "max_level": 5,
+                "max_level": 9,
+                "species": "SPECIES_PIDGEY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_FLETCHLING"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
                 "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BUNEARY"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
+                "max_level": 8,
                 "species": "SPECIES_FLETCHLING"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FLETCHLING"
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_SKIDDO"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_SKIDDO"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BUNEARY"
+                "max_level": 8,
+                "species": "SPECIES_SKIDDO"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_EEVEE"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BUNEARY"
+                "max_level": 7,
+                "species": "SPECIES_EEVEE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PIDOVE"
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_EEVEE_STARTER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PIDOVE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PIDOVE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PIDOVE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PIDOVE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PIDOVE"
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_EEVEE_STARTER"
               }
             ]
           }
         },
         {
           "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
-          "base_label": "gLittlerootSouth_MysticGrove_Morning_Rain",
+          "base_label": "gLittlerootSouth_MysticGrove_Night",
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_HOOTHOOT"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 9,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_MURKROW"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 8,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_POOCHYENA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_POOCHYENA"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 8,
+                "species": "SPECIES_POOCHYENA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_ZORUA"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 7,
+                "species": "SPECIES_ZORUA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ZORUA_HISUI"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_ZORUA_HISUI"
               }
             ]
           }
         },
         {
           "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
-          "base_label": "gLittlerootSouth_MysticGrove_Morning_Snow",
+          "base_label": "gLittlerootSouth_MysticGrove_Morning",
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_PIDOVE"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 9,
+                "species": "SPECIES_PIDOVE"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_PIDOVE"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_HOPPIP"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 8,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_HOPPIP"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 8,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_CHERUBI"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 7,
+                "species": "SPECIES_CHERUBI"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_CHERUBI"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_CHERUBI"
               }
             ]
           }
         },
         {
           "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
-          "base_label": "gLittlerootSouth_MysticGrove_Morning_Sandstorm",
+          "base_label": "gLittlerootSouth_MysticGrove_Evening",
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_ROCKRUFF"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 9,
+                "species": "SPECIES_ROCKRUFF"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_ROOKIDEE"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_ROOKIDEE"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 8,
+                "species": "SPECIES_ROOKIDEE"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_ROOKIDEE"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_ROCKRUFF"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 8,
+                "species": "SPECIES_ROCKRUFF_OWN_TEMPO"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_VENONAT"
               },
               {
                 "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "max_level": 7,
+                "species": "SPECIES_VENONAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_VENONAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
-          "base_label": "gLittlerootSouth_MysticGrove_Morning_Thunderstorm",
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SHINX"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BLITZLE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SHINX"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SHINX"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BLITZLE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BLITZLE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_JOLTIK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_JOLTIK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_JOLTIK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_JOLTIK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_JOLTIK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_JOLTIK"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
-          "base_label": "gLittlerootSouth_MysticGrove_Morning_Fog",
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_VENONAT"
               }
             ]
           }

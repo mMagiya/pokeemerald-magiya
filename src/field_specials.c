@@ -4361,29 +4361,3 @@ void GetCodeFeedback(void)
     else
         gSpecialVar_Result = 0;
 }
-
-// Begin Magiya Custom Additions
-void GetTimeOfDay(void)
-{
-	u8 nightorday;
-	RtcCalcLocalTime();
-	if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8)
-	{
-		nightorday = 0; //Morning
-	}
-	else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17)
-	{
-		nightorday = 1; //Day
-	}
-	else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20)
-	{
-		nightorday = 2; //Evening
-	}
-	else
-	{
-		nightorday = 3; //Night
-	}
-	gSpecialVar_Result = nightorday;
-}
-
-// End Magiya Custom Additions

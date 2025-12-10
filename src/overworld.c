@@ -3745,4 +3745,5 @@ void CB2_ReturnToFullScreenStartMenu(void)
 
 	StartMenuFull_Init(CB2_ReturnToField);
 }
+
 // End Community Addons
