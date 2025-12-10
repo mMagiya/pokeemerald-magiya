@@ -13320,6 +13320,351 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
+          "base_label": "gLittlerootSouth_MysticGrove_Rain",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 9,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_LOTAD"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_LOTAD"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_LOTAD"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_LOTAD"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_SURSKIT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_SURSKIT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_SURSKIT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_SURSKIT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_SURSKIT"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
+          "base_label": "gLittlerootSouth_MysticGrove_Thunderstorm",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 5,
+                "max_level": 9,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_JOLTIK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_JOLTIK"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_JOLTIK"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_JOLTIK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_MAREEP"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_MAREEP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_MAREEP"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_MAREEP"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_MAREEP"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
+          "base_label": "gLittlerootSouth_MysticGrove_Snow",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_CUBCHOO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 9,
+                "species": "SPECIES_CUBCHOO"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_CUBCHOO"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_SNOM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_SNOM"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_SNOM"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_SNOM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_SNORUNT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_SNORUNT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_SNORUNT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_SNORUNT"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_SNORUNT"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
+          "base_label": "gLittlerootSouth_MysticGrove_Sandstorm",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HIPPOPOTAS"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HIPPOPOTAS"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HIPPOPOTAS"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CACNEA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CACNEA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CACNEA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_TRAPINCH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_TRAPINCH"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE",
+          "base_label": "gLittlerootSouth_MysticGrove_Fog",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_WOOBAT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_WOOBAT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_WOOBAT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ESPURR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ESPURR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ESPURR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ESPURR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ZORUA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ZORUA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ZORUA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ZORUA_HISUI"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ZORUA_HISUI"
+              }
+            ]
+          }
         }
       ]
     },

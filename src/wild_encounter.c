@@ -359,6 +359,10 @@ u16 GetCurrentMapWildMonHeaderId(void)
         if (gWildMonHeaders[i].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
             gWildMonHeaders[i].mapNum == gSaveBlock1Ptr->location.mapNum)
         {
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LITTLEROOT_SOUTH_MYSTIC_GROVE))
+                i += VarGet(VAR_WEATHER_CURRENT);
+
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ALTERING_CAVE) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ALTERING_CAVE))
             {
