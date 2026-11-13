@@ -27684,3 +27684,34 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonFrontPic_Egg[] = INCGFX_U32("graphics/pokemon/egg/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Egg[] = INCGFX_U16("graphics/pokemon/egg/normal.pal", ".gbapal");
     const u8 gMonIcon_Egg[] = INCGFX_U8("graphics/pokemon/egg/icon.png", ".4bpp");
+
+// Begin Magiya's Custom Additions
+#if P_FAMILY_WAILMER && P_ENABLE_CUSTOMS
+#if !P_GBA_STYLE_SPECIES_GFX
+    const u32 gMonFrontPic_WailordMega[] = INCGFX_U32("graphics/pokemon/wailord_mega/anim_front.png", ".4bpp.smol");
+    const u16 gMonPalette_WailordMega[] = INCGFX_U16("graphics/pokemon/wailord_mega/normal.pal", ".gbapal");
+    const u32 gMonBackPic_WailordMega[] = INCGFX_U32("graphics/pokemon/wailord_mega/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_WailordMega[] = INCGFX_U16("graphics/pokemon/wailord_mega/shiny.pal", ".gbapal");
+#else
+    const u32 gMonFrontPic_WailordMega[] = INCGFX_U32("graphics/pokemon/wailord_mega/anim_front_gba.png", ".4bpp.smol");
+    const u16 gMonPalette_WailordMega[] = INCGFX_U16("graphics/pokemon/wailord_mega/normal_gba.pal", ".gbapal");
+    const u32 gMonBackPic_WailordMega[] = INCGFX_U32("graphics/pokemon/wailord_mega/back_gba.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_WailordMega[] = INCGFX_U16("graphics/pokemon/wailord_mega/shiny_gba.pal", ".gbapal");
+#endif //P_GBA_STYLE_SPECIES_GFX
+#if !P_GBA_STYLE_SPECIES_ICONS
+    const u8 gMonIcon_WailordMega[] = INCGFX_U8("graphics/pokemon/wailord_mega/icon.png", ".4bpp");
+#else
+    const u8 gMonIcon_WailordMega[] = INCGFX_U8("graphics/pokemon/wailord_mega/icon_gba.png", ".4bpp");
+#endif //P_GBA_STYLE_SPECIES_ICONS
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_WailordMega[] = INCGFX_U8("graphics/pokemon/wailord_mega/footprint.png", ".1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_WailordMega[] = INCGFX_COMP("graphics/pokemon/wailord/overworld.png", ".4bpp", "-mwidth 8 -mheight 8");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_WailordMega[] = INCGFX_U16("graphics/pokemon/wailord/overworld_normal.pal", ".gbapal");
+    const u16 gShinyOverworldPalette_WailordMega[] = INCGFX_U16("graphics/pokemon/wailord/overworld_shiny.pal", ".gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+#endif //P_FAMILY_WAILMER && P_ENABLE_CUSTOMS
+// End Magiya's Custom Additions

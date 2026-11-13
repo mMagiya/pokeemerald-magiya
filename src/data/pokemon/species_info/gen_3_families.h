@@ -6754,6 +6754,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sWailordLevelUpLearnset,
         .teachableLearnset = sWailordTeachableLearnset,
+        .formChangeTable = sWailordFormChangeTable,
     },
 #endif //P_FAMILY_WAILMER
 
