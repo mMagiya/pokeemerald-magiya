@@ -16,6 +16,10 @@
 #define P_GEN_8_POKEMON                  TRUE // Generation 8 Pokémon (SwSh, BDSP, LA)
 #define P_GEN_9_POKEMON                  TRUE // Generation 9 Pokémon (SV)
 
+// Begin Magiya's Custom Additions
+#define P_ENABLE_CUSTOMS                 TRUE // Magiya's Custom Pokémon
+// End Magiya's Custom Additions
+
 // Setting this to TRUE will add the new evolutions to the Regional Dex.
 #define P_NEW_EVOS_IN_REGIONAL_DEX       TRUE
 
