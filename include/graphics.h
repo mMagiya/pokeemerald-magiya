@@ -3444,6 +3444,8 @@ extern const u32 gItemIcon_ReversionStone[];
 extern const u16 gItemIconPalette_ReversionStone[];
 extern const u32 gItemIcon_GenesisStone[];
 extern const u16 gItemIconPalette_GenesisStone[];
+extern const u32 gItemIcon_Wailordite[];
+extern const u16 gItemIconPalette_Wailordite[];
 // End Magiya's Custom Additions
 
 #endif //GUARD_GRAPHICS_H

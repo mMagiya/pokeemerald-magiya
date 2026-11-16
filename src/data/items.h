@@ -16133,6 +16133,24 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_GenesisStone,
         .iconPalette = gItemIconPalette_GenesisStone,
     },
+
+    [ITEM_WAILORDITE] =
+    {
+        .name = ITEM_NAME("Wailordite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Wailord to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Wailordite,
+        .iconPalette = gItemIconPalette_Wailordite,
+    },
 // End Magiya's Custom Additions
 };
 

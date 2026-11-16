@@ -1055,6 +1055,8 @@ enum __attribute__((packed)) Item
 // Begin Magiya's Custom Additions
     ITEM_REVERSION_STONE = 874,
     ITEM_GENESIS_STONE = 875,
+    ITEM_WAILORDITE = 876,
+
 // End Magiya's Custom Additions
 
     ITEMS_COUNT,
