@@ -2112,3 +2112,11 @@ const u16 gItemIconPalette_SwapSnack[] = INCGFX_U16("graphics/items/icon_palette
 
 const u32 gItemIcon_TwiceSpicedRadish[] = INCGFX_U32("graphics/items/icons/twice_spiced_radish.png", ".4bpp.smol");
 const u16 gItemIconPalette_TwiceSpicedRadish[] = INCGFX_U16("graphics/items/icon_palettes/twice_spiced_radish.pal", ".gbapal");
+
+// Begin Magiya's Custom Additions
+const u32 gItemIcon_ReversionStone[] = INCGFX_U32("graphics/items/icons/reversion_stone.png", ".4bpp.smol");
+const u16 gItemIconPalette_ReversionStone[] = INCGFX_U16("graphics/items/icon_palettes/reversion_stone.pal", ".gbapal");
+
+const u32 gItemIcon_GenesisStone[] = INCGFX_U32("graphics/items/icons/genesis_stone.png", ".4bpp.smol");
+const u16 gItemIconPalette_GenesisStone[] = INCGFX_U16("graphics/items/icon_palettes/genesis_stone.pal", ".gbapal");
+// End Magiya's Custom Additions

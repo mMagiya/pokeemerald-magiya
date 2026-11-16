@@ -16099,6 +16099,41 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+// Begin Magiya's Custom Additions
+
+    [ITEM_REVERSION_STONE] =
+    {
+        .name = ITEM_NAME("Reversion Stone"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Allows certain\n"
+            "Pokémon to undergo\n"
+            "Paradox Reversion."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .iconPic = gItemIcon_ReversionStone,
+        .iconPalette = gItemIconPalette_ReversionStone,
+    },
+
+    [ITEM_GENESIS_STONE] =
+    {
+        .name = ITEM_NAME("Genesis Stone"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Allows certain\n"
+            "Pokémon to undergo\n"
+            "Paradox Genesis."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .iconPic = gItemIcon_GenesisStone,
+        .iconPalette = gItemIconPalette_GenesisStone,
+    },
+// End Magiya's Custom Additions
 };
 
 #undef ITEM_NAME

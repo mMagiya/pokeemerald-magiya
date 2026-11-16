@@ -1052,6 +1052,11 @@ enum __attribute__((packed)) Item
     ITEM_TATSUGIRINITE = 872,
     ITEM_GLIMMORANITE = 873,
 
+// Begin Magiya's Custom Additions
+    ITEM_REVERSION_STONE = 874,
+    ITEM_GENESIS_STONE = 875,
+// End Magiya's Custom Additions
+
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,
 };

@@ -3439,4 +3439,11 @@ extern const u16 gBattleIcons_Pal2[];
 extern const u32 gGhostFrontPic[];
 extern const u16 gGhostPalette[];
 
+// Begin Magiya's Custom Additions
+extern const u32 gItemIcon_ReversionStone[];
+extern const u16 gItemIconPalette_ReversionStone[];
+extern const u32 gItemIcon_GenesisStone[];
+extern const u16 gItemIconPalette_GenesisStone[];
+// End Magiya's Custom Additions
+
 #endif //GUARD_GRAPHICS_H
