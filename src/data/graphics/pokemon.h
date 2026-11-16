@@ -27714,4 +27714,35 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_WAILMER && P_ENABLE_CUSTOMS
+
+/* // SLEEPY_SANDS indefinitely on hold until human-created art is created or sourced.
+#if P_FAMILY_SANDSHREW && P_ENABLE_CUSTOMS
+    const u32 gMonFrontPic_SleepySands[] = INCGFX_U32("graphics/pokemon/sleepy_sands/anim_front.png", ".4bpp.smol");
+    const u16 gMonPalette_SleepySands[] = INCGFX_U16("graphics/pokemon/sleepy_sands/normal.pal", ".gbapal");
+    const u32 gMonBackPic_SleepySands[] = INCGFX_U32("graphics/pokemon/sleepy_sands/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_SleepySands[] = INCGFX_U16("graphics/pokemon/sleepy_sands/shiny.pal", ".gbapal");
+
+//    const u8 gMonIcon_SleepySands[] = INCGFX_U8("graphics/pokemon/sandslash/icon.png", ".4bpp");     // Temporarily uses Sandslash until bespoke sprite is created
+//    const u8 gMonIcon_SleepySands[] = INCGFX_U8("graphics/pokemon/sandslash/icon_gba.png", ".4bpp"); // Temporarily uses Sandslash until bespoke sprite is created
+#endif //P_FAMILY_SANDSHREW && P_ENABLE_CUSTOMS
+*/
+#if P_FAMILY_BULBASAUR && P_ENABLE_CUSTOMS
+    const u32 gMonFrontPic_IronTitan[] = INCGFX_U32("graphics/pokemon/iron_titan/anim_front.png", ".4bpp.smol");
+    const u16 gMonPalette_IronTitan[] = INCGFX_U16("graphics/pokemon/iron_titan/normal.pal", ".gbapal");
+    const u32 gMonBackPic_IronTitan[] = INCGFX_U32("graphics/pokemon/iron_titan/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_IronTitan[] = INCGFX_U16("graphics/pokemon/iron_titan/shiny.pal", ".gbapal");
+
+    const u8 gMonIcon_IronTitan[] = INCGFX_U8("graphics/pokemon/iron_titan/icon.png", ".4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_IronTitan[] = INCGFX_U8("graphics/pokemon/iron_titan/footprint.png", ".1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_IronTitan[] = INCGFX_COMP("graphics/pokemon/iron_titan/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_IronTitan[] = INCGFX_U16("graphics/pokemon/iron_titan/overworld_normal.pal", ".gbapal");
+    const u16 gShinyOverworldPalette_IronTitan[] = INCGFX_U16("graphics/pokemon/iron_titan/overworld_shiny.pal", ".gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+#endif //P_FAMILY_BULBASAUR && P_ENABLE_CUSTOMS
+
 // End Magiya's Custom Additions

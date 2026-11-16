@@ -6693,4 +6693,12 @@ static const struct SpriteFrameImage sPicTable_Pecharunt[] = {
 };
 #endif //P_FAMILY_PECHARUNT
 
+// Begin Magiya's Custom Additions
+#if P_FAMILY_BULBASAUR && P_ENABLE_CUSTOMS
+static const struct SpriteFrameImage sPicTable_IronTitan[] = {
+    overworld_ascending_frames(gObjectEventPic_Venusaur, 4, 4),
+};
+#endif //P_FAMILY_BULBASAUR && P_ENABLE_CUSTOMS
+// End Magiya's Custom Additions
+
 #endif //OW_POKEMON_OBJECT_EVENTS

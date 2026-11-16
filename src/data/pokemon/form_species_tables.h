@@ -150,6 +150,11 @@ static const u16 sSandslashFormSpeciesIdTable[] = {
 #if P_ALOLAN_FORMS
     SPECIES_SANDSLASH_ALOLA,
 #endif
+/* // SLEEPY_SANDS is indefinitely on hold until human-created art is created or sourced.
+#if P_PARADOX_FORMS
+    SPECIES_SLEEPY_SANDS,
+#endif
+*/
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_SANDSHREW

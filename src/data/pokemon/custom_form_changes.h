@@ -11,3 +11,16 @@ static const struct FormChange sWailordFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_WAILMER
+
+/* // SLEEPY_SANDS indefinitely on hold until human-created art is created or sourced.
+// Sleepy Sands / Paradox Reversion Sandslash
+#if P_FAMILY_SANDSHREW
+static const struct FormChange sSandslashFormChangeTable[] =
+{
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_ITEM_USE,      SPECIES_SLEEPY_SANDS, ITEM_REVERSION_STONE},
+#endif //P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_SANDSHREW
+*/

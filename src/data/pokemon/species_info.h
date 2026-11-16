@@ -164,8 +164,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
 #ifdef P_ENABLE_CUSTOMS
     #include "species_info/magi_customs.h"
 #endif //P_ENABLE_CUSTOMS
-
-
 // End Magiya's Custom Additions
 
     [SPECIES_EGG] =

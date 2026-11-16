@@ -4487,6 +4487,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sSandslashLevelUpLearnset,
         .teachableLearnset = sSandslashTeachableLearnset,
         .formSpeciesIdTable = sSandslashFormSpeciesIdTable,
+//        .formChangeTable = sSandslashFormChangeTable, // SLEEPY_SANDS indefinitely on hold until human-created art is created or sourced.
     },
 
 #if P_ALOLAN_FORMS

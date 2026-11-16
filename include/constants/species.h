@@ -1693,8 +1693,12 @@ enum __attribute__((packed)) Species
     SPECIES_CUSTOM_START = SPECIES_GLIMMORA_MEGA,
     // Add any custom species between here and SPECIES_CUSTOM_END
 // Begin Magiya's Custom Additions
-    SPECIES_WAILORD_MEGA = 1573,
+    SPECIES_WAILORD_MEGA            = 1573,
+//  SLEEPY_SANDS indefinitely on hold until human-created art is created or sourced.
+//  SPECIES_SLEEPY_SANDS            = XXXX, // Sleepy Sands / Paradox Reversion Sandslash 
+    SPECIES_IRON_TITAN              = 1574, // Iron Titan / Paradox Genesis Venusaur
 // End Magiya's Custom Additions
+
     SPECIES_CUSTOM_END,
 
     SPECIES_EGG = SPECIES_CUSTOM_END,

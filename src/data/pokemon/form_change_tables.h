@@ -7,6 +7,9 @@ static const struct FormChange sVenusaurFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_VENUSAUR_GMAX},
 #endif
+#if P_PARADOX_FORMS && P_ENABLE_CUSTOMS
+    {FORM_CHANGE_ITEM_USE,                      SPECIES_IRON_TITAN, ITEM_GENESIS_STONE},
+#endif //P_PARADOX_FORMS && P_ENABLE_CUSTOMS
     {FORM_CHANGE_FAINT,                         SPECIES_VENUSAUR},
     {FORM_CHANGE_END_BATTLE,                    SPECIES_VENUSAUR},
     {FORM_CHANGE_TERMINATOR},

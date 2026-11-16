@@ -607,4 +607,8 @@
 #define P_FAMILY_TERAPAGOS               P_GEN_9_POKEMON
 #define P_FAMILY_PECHARUNT               P_GEN_9_POKEMON
 
+// Begin Magiya's Custom Additions
+#define P_PARADOX_FORMS                  TRUE // Magiya's custom Paradox Pokémon. Includes all new Paradox Reversion and Paradox Genesis forms.
+// End Magiya's Custom Additions
+
 #endif // GUARD_CONFIG_SPECIES_ENABLED_H
