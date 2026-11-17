@@ -16151,6 +16151,24 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_Wailordite,
         .iconPalette = gItemIconPalette_Wailordite,
     },
+
+    [ITEM_FLYGONITE] =
+    {
+        .name = ITEM_NAME("Flygonite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Flygon to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Flygonite,
+        .iconPalette = gItemIconPalette_Flygonite,
+    },
 // End Magiya's Custom Additions
 };
 

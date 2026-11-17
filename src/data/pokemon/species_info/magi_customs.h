@@ -221,6 +221,90 @@ const struct SpeciesInfo gSpeciesInfoCustoms[] =
     },
 #endif //P_FAMILY_BULBASAUR && P_PARADOX_FORMS
 
+#if P_FAMILY_TRAPINCH && P_MEGA_EVOLUTIONS
+    [SPECIES_FLYGON_MEGA] =
+    { // added 100
+        .baseHP        = 90,
+        .baseAttack    = 110,
+        .baseDefense   = 85,
+        .baseSpeed     = 200,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_BUG, TYPE_DRAGON),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 260,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 234,
+    #else
+        .expYield = 197,
+    #endif
+        .evYield_Attack = 1,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = TRAPINCH_FAMILY_EGG_GROUPS,
+        .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE }, // ABILITY_MEGA_BURST_FLYGON to come (LEVITATE + SAND_VEIL + *GroundTypeStab)
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Flygon"),
+        .cryId = CRY_FLYGON,
+        .natDexNum = NATIONAL_DEX_FLYGON,
+        .categoryName = _("Supersonic"),
+        .height = 25,
+        .weight = 800,
+        .description = COMPOUND_STRING(
+            "The power of MEGA ENERGY brings Flygon's\n"
+            "power to an entirely new level. It now\n"
+            "flies at super-sonic speed, easily able\n"
+            "to overtake any prey."
+        ),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 268,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_FlygonMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 50),
+        ),
+        .frontAnimId = ANIM_ZIGZAG_SLOW,
+        .enemyMonElevation = 7,
+        .backPic = gMonBackPic_FlygonMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 2 : 3,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_FlygonMega,
+        .shinyPalette = gMonShinyPalette_FlygonMega,
+        .iconSprite = gMonIcon_FlygonMega,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 17, SHADOW_SIZE_M)
+        FOOTPRINT(FlygonMega)
+        OVERWORLD(
+            sPicTable_FlygonMega,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_FlygonMega,
+            gShinyOverworldPalette_FlygonMega
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sFlygonLevelUpLearnset,
+        .teachableLearnset = sFlygonTeachableLearnset,
+        .formChangeTable = sFlygonFormChangeTable,
+    },
+#endif //P_FAMILY_TRAPINCH && P_MEGA_EVOLUTIONS
+
 #ifdef __INTELLISENSE__
 };
 #endif

@@ -2122,4 +2122,7 @@ const u16 gItemIconPalette_GenesisStone[] = INCGFX_U16("graphics/items/icon_pale
 
 const u32 gItemIcon_Wailordite[] = INCGFX_U32("graphics/items/icons/wailordite.png", ".4bpp.smol");
 const u16 gItemIconPalette_Wailordite[] = INCGFX_U16("graphics/items/icon_palettes/wailordite.pal", ".gbapal");
+
+const u32 gItemIcon_Flygonite[] = INCGFX_U32("graphics/items/icons/flygonite.png", ".4bpp.smol");
+const u16 gItemIconPalette_Flygonite[] = INCGFX_U16("graphics/items/icon_palettes/flygonite.pal", ".gbapal");
 // End Magiya's Custom Additions

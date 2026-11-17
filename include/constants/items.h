@@ -1056,6 +1056,7 @@ enum __attribute__((packed)) Item
     ITEM_REVERSION_STONE = 874,
     ITEM_GENESIS_STONE = 875,
     ITEM_WAILORDITE = 876,
+    ITEM_FLYGONITE = 877,
 
 // End Magiya's Custom Additions
 

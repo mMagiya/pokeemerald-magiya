@@ -1697,6 +1697,7 @@ enum __attribute__((packed)) Species
 //  SLEEPY_SANDS indefinitely on hold until human-created art is created or sourced.
 //  SPECIES_SLEEPY_SANDS            = XXXX, // Sleepy Sands / Paradox Reversion Sandslash 
     SPECIES_IRON_TITAN              = 1574, // Iron Titan / Paradox Genesis Venusaur
+    SPECIES_FLYGON_MEGA             = 1575,
 // End Magiya's Custom Additions
 
     SPECIES_CUSTOM_END,

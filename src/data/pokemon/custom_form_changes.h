@@ -26,3 +26,15 @@ static const struct FormChange sSandslashFormChangeTable[] =
 };
 #endif //P_FAMILY_SANDSHREW
 */
+
+#if P_FAMILY_TRAPINCH
+static const struct FormChange sFlygonFormChangeTable[] =
+{
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_FLYGON_MEGA,   ITEM_FLYGONITE},
+#endif //P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_FAINT,                         SPECIES_FLYGON},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_FLYGON},
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_TRAPINCH

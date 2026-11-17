@@ -7550,6 +7550,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sFlygonLevelUpLearnset,
         .teachableLearnset = sFlygonTeachableLearnset,
+        .formChangeTable = sFlygonFormChangeTable,
     },
 #endif //P_FAMILY_TRAPINCH
 
