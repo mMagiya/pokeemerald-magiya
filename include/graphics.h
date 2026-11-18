@@ -3440,14 +3440,9 @@ extern const u32 gGhostFrontPic[];
 extern const u16 gGhostPalette[];
 
 // Begin Magiya's Custom Additions
-extern const u32 gItemIcon_ReversionStone[];
-extern const u16 gItemIconPalette_ReversionStone[];
-extern const u32 gItemIcon_GenesisStone[];
-extern const u16 gItemIconPalette_GenesisStone[];
-extern const u32 gItemIcon_Wailordite[];
-extern const u16 gItemIconPalette_Wailordite[];
-extern const u32 gItemIcon_Flygonite[];
-extern const u16 gItemIconPalette_Flygonite[];
+#if P_ENABLE_CUSTOMS
+#include "custom_graphics.h"
+#endif // P_ENABLE_CUSTOMS
 // End Magiya's Custom Additions
 
 #endif //GUARD_GRAPHICS_H
