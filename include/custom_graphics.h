@@ -1,6 +1,3 @@
-#ifndef GUARD_GRAPHICS_H
-#define GUARD_GRAPHICS_H
-
 extern const u32 gItemIcon_ReversionStone[];
 extern const u16 gItemIconPalette_ReversionStone[];
 extern const u32 gItemIcon_GenesisStone[];
