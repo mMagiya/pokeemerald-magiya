@@ -342,7 +342,12 @@ enum __attribute__((packed)) Ability
     ABILITY_SPICY_SPRAY = 318,
     ABILITY_AURA_GUARD = 319,
     ABILITIES_COUNT_GEN9,
-    ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
+
+// Begin Magiya's Custom Additions
+
+    ABILITIES_COUNT_CUSTOM,
+// End Magiya's Custom Additions
+    ABILITIES_COUNT = ABILITIES_COUNT_CUSTOM,
 };
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

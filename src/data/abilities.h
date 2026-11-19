@@ -2556,4 +2556,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Aura Guard"),
         .description = COMPOUND_STRING("Unimplemented."),
     },
+// Begin Magiya's Custom Additions
+
+// End Magiya's Custom Additions
 };
