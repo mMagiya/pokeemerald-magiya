@@ -81,7 +81,7 @@
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TRAPINCH
-/*
+
 #if P_FAMILY_KABUTO
     const u32 gMonFrontPic_KabutopsBone[] = INCGFX_U32("graphics/pokemon/kabutops_bone/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_KabutopsBone[] = INCGFX_U16("graphics/pokemon/kabutops_bone/normal.pal", ".gbapal");
@@ -101,5 +101,5 @@
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_KABUTO
-*/
+
 // End Magiya's Custom Additions

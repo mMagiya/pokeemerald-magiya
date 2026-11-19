@@ -6707,6 +6707,12 @@ static const struct SpriteFrameImage sPicTable_Pecharunt[] = {
     };
     #endif //P_FAMILY_TRAPINCH
 
+    #if P_FAMILY_KABUTO
+    static const struct SpriteFrameImage sPicTable_KabutopsBone[] = {
+        overworld_ascending_frames(gObjectEventPic_KabutopsBone, 4, 4),
+    };
+    #endif //P_FAMILY_KABUTO
+
 #endif //P_ENABLE_CUSTOMS
 // End Magiya's Custom Additions
 

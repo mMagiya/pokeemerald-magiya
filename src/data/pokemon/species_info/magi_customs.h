@@ -305,6 +305,80 @@ const struct SpeciesInfo gSpeciesInfoCustoms[] =
     },
 #endif //P_FAMILY_TRAPINCH && P_MEGA_EVOLUTIONS
 
+#if P_FAMILY_KABUTO
+    [SPECIES_KABUTOPS_BONE] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 135,
+        .baseDefense   = 125,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_WATER),
+        .catchRate = 45,
+        .expYield = 201,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_BATTLE_ARMOR, ABILITY_WEAK_ARMOR }, // Temporary until custom ability added
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("BoneKabutops"),
+        .cryId = CRY_KABUTOPS,
+        .natDexNum = NATIONAL_DEX_KABUTOPS,
+        .categoryName = _("Living Bone"),
+        .height = 13,
+        .weight = 405,
+        .description = COMPOUND_STRING(
+        //  "being a water dweller to living on land as\n"
+            "Formerly extinct and brought back again,\n"
+            "KABUTOPS is once again vanishing from the\n"
+            "wild. Now, these twisted abominations can\n"
+            "sometimes be found in their place."
+        ),
+        .pokemonScale = 271,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_KabutopsBone,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 3 : 2,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_H_SHAKE,
+        .backPic = gMonBackPic_KabutopsBone,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 6,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_KabutopsBone,
+        .shinyPalette = gMonShinyPalette_KabutopsBone,
+        .iconSprite = gMonIcon_KabutopsBone,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(KabutopsBone)
+        OVERWORLD(
+            sPicTable_KabutopsBone,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_KabutopsBone,
+            gShinyOverworldPalette_KabutopsBone
+        )
+      //.levelUpLearnset = sKabutopsBoneLevelUpLearnset,
+      //.teachableLearnset = sKabutopsBoneTeachableLearnset,
+      .levelUpLearnset = sKabutopsLevelUpLearnset,
+      .teachableLearnset = sKabutopsTeachableLearnset,
+    },
+#endif //P_FAMILY_KABUTO
+
 #ifdef __INTELLISENSE__
 };
 #endif
