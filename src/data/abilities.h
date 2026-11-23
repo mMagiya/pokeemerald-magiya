@@ -2557,6 +2557,15 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Unimplemented."),
     },
 // Begin Magiya's Custom Additions
-
+    [ABILITY_MEGA_BURST_FLYGON] = 
+    {
+        .name = _("Mega Burst"),
+        .description = COMPOUND_STRING("Overflowing with Mega Energy.")
+    },
+    [ABILITY_ROTOTILL] =
+    {
+        .name = _("Rototill"),
+        .description = COMPOUND_STRING("Normal moves become Ground."),
+    }
 // End Magiya's Custom Additions
 };

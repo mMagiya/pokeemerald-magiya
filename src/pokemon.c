@@ -6617,7 +6617,7 @@ bool32 IsSpeciesRegionalForm(enum Species species)
         || gSpeciesInfo[species].isGalarianForm
         || gSpeciesInfo[species].isHisuianForm
         || gSpeciesInfo[species].isPaldeanForm;
-}
+    }
 
 bool32 IsSpeciesRegionalFormFromRegion(enum Species species, enum Region region)
 {

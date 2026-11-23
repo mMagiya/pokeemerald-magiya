@@ -626,6 +626,7 @@ static bool32 FindMonThatAbsorbsOpponentsMove(struct SwitchAiContext *switchCont
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_EARTH_EATER;
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_LEVITATE;
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_EELEVATE;
+        absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_MEGA_BURST_FLYGON;
     }
     if (IsSoundMove(switchContext->incomingMove))
     {
@@ -1705,7 +1706,7 @@ static s32 GetSwitchinWeatherImpact(enum BattlerId battler)
         }
         else if ((weather  & B_WEATHER_SANDSTORM)
             && !IS_BATTLER_ANY_TYPE(battler, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
-            && ability != ABILITY_SAND_VEIL && ability != ABILITY_SAND_RUSH && ability != ABILITY_SAND_FORCE)
+            && ability != ABILITY_SAND_VEIL && ability != ABILITY_SAND_RUSH && ability != ABILITY_SAND_FORCE && ability != ABILITY_MEGA_BURST_FLYGON)
         {
             weatherImpact = maxHP / 16;
             if (weatherImpact == 0)

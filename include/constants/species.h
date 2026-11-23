@@ -1699,6 +1699,8 @@ enum __attribute__((packed)) Species
     SPECIES_IRON_TITAN              = 1574, // Iron Titan / Paradox Genesis Venusaur
     SPECIES_FLYGON_MEGA             = 1575,
     SPECIES_KABUTOPS_BONE           = 1579, // Fossilized variant of Kabutops
+    SPECIES_EKANS_INFINITE          = 1580,
+    SPECIES_ARBOK_INFINITE          = 1581,
 // End Magiya's Custom Additions
 
     SPECIES_CUSTOM_END,

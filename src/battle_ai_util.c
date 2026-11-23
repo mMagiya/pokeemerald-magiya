@@ -3408,7 +3408,9 @@ static bool32 DoesBattlerTakeSandstormDamage(enum BattlerId battlerId, enum Abil
       && ability != ABILITY_SAND_FORCE
       && ability != ABILITY_SAND_RUSH
       && ability != ABILITY_MAGIC_GUARD
-      && ability != ABILITY_OVERCOAT)
+      && ability != ABILITY_OVERCOAT
+      && ability != ABILITY_MEGA_BURST_FLYGON
+    )
         return TRUE;
     return FALSE;
 }

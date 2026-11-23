@@ -102,4 +102,42 @@
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_KABUTO
 
+#if P_FAMILY_EKANS
+    const u32 gMonFrontPic_EkansInfinite[] = INCGFX_U32("graphics/pokemon/infinite/ekans/anim_front.png", ".4bpp.smol");
+    const u16 gMonPalette_EkansInfinite[] = INCGFX_U16("graphics/pokemon/infinite/ekans/normal.pal", ".gbapal");
+    const u32 gMonBackPic_EkansInfinite[] = INCGFX_U32("graphics/pokemon/infinite/ekans/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_EkansInfinite[] = INCGFX_U16("graphics/pokemon/infinite/ekans/shiny.pal", ".gbapal");
+
+    const u8 gMonIcon_EkansInfinite[] = INCGFX_U8("graphics/pokemon/infinite/ekans/icon.png", ".4bpp");
+
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_EkansInfinite[] = INCGFX_U8("graphics/pokemon/infinite/ekans/footprint.png", ".1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_EkansInfinite[] = INCGFX_COMP("graphics/pokemon/infinite/ekans/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_EkansInfinite[] = INCGFX_U16("graphics/pokemon/infinite/ekans/overworld_normal.pal", ".gbapal");
+    const u16 gShinyOverworldPalette_EkansInfinite[] = INCGFX_U16("graphics/pokemon/infinite/ekans/overworld_shiny.pal", ".gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_ArbokInfinite[] = INCGFX_U32("graphics/pokemon/infinite/arbok/anim_front.png", ".4bpp.smol");
+    const u16 gMonPalette_ArbokInfinite[] = INCGFX_U16("graphics/pokemon/infinite/arbok/normal.pal", ".gbapal");
+    const u32 gMonBackPic_ArbokInfinite[] = INCGFX_U32("graphics/pokemon/infinite/arbok/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_ArbokInfinite[] = INCGFX_U16("graphics/pokemon/infinite/arbok/shiny.pal", ".gbapal");
+
+    const u8 gMonIcon_ArbokInfinite[] = INCGFX_U8("graphics/pokemon/infinite/arbok/icon.png", ".4bpp");
+
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_ArbokInfinite[] = INCGFX_U8("graphics/pokemon/infinite/arbok/footprint.png", ".1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_ArbokInfinite[] = INCGFX_COMP("graphics/pokemon/infinite/arbok/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_ArbokInfinite[] = INCGFX_U16("graphics/pokemon/infinite/arbok/overworld_normal.pal", ".gbapal");
+    const u16 gShinyOverworldPalette_ArbokInfinite[] = INCGFX_U16("graphics/pokemon/infinite/arbok/overworld_shiny.pal", ".gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+#endif //P_FAMILY_EKANS
+
 // End Magiya's Custom Additions

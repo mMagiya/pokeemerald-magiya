@@ -344,7 +344,8 @@ enum __attribute__((packed)) Ability
     ABILITIES_COUNT_GEN9,
 
 // Begin Magiya's Custom Additions
-
+    ABILITY_MEGA_BURST_FLYGON       = 320,
+    ABILITY_ROTOTILL                = 321,
     ABILITIES_COUNT_CUSTOM,
 // End Magiya's Custom Additions
     ABILITIES_COUNT = ABILITIES_COUNT_CUSTOM,

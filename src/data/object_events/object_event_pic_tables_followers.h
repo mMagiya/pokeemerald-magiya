@@ -6713,6 +6713,14 @@ static const struct SpriteFrameImage sPicTable_Pecharunt[] = {
     };
     #endif //P_FAMILY_KABUTO
 
+    #if P_FAMILY_EKANS
+    static const struct SpriteFrameImage sPicTable_EkansInfinite[] = {
+        overworld_ascending_frames(gObjectEventPic_EkansInfinite, 4, 4),
+    };
+    static const struct SpriteFrameImage sPicTable_ArbokInfinite[] = {
+        overworld_ascending_frames(gObjectEventPic_ArbokInfinite, 4, 4),
+    };
+    #endif //P_FAMILY_EKANS
 #endif //P_ENABLE_CUSTOMS
 // End Magiya's Custom Additions
 
