@@ -27684,3 +27684,9 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonFrontPic_Egg[] = INCGFX_U32("graphics/pokemon/egg/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Egg[] = INCGFX_U16("graphics/pokemon/egg/normal.pal", ".gbapal");
     const u8 gMonIcon_Egg[] = INCGFX_U8("graphics/pokemon/egg/icon.png", ".4bpp");
+
+// Begin Magiya's Custom Additions
+#if P_ENABLE_CUSTOMS
+#include "custom_pokemon.h"
+#endif // P_ENABLE_CUSTOMS
+// End Magiya's Custom Additions

@@ -489,6 +489,12 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 #include "data/pokemon/wild_encounter_ow_behavior.h"
 #include "data/object_events/object_event_pic_tables_followers.h"
 
+// Begin Magiya's Custom Additions
+#if P_ENABLE_CUSTOMS
+#include "data/pokemon/custom_form_changes.h"
+#endif //P_ENABLE_CUSTOMS
+// End Magiya's Custom Additions
+
 #include "data/pokemon/species_info.h"
 
 #define PP_UP_SHIFTS(val)           val,        (val) << 2,        (val) << 4,        (val) << 6

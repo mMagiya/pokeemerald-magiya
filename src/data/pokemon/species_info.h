@@ -159,6 +159,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
     #include "species_info/gen_7_families.h"
     #include "species_info/gen_8_families.h"
     #include "species_info/gen_9_families.h"
+    
+// Begin Magiya's Custom Additions
+#ifdef P_ENABLE_CUSTOMS
+    #include "species_info/magi_customs.h"
+#endif //P_ENABLE_CUSTOMS
+
+
+// End Magiya's Custom Additions
 
     [SPECIES_EGG] =
     {
