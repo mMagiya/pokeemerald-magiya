@@ -3439,4 +3439,10 @@ extern const u16 gBattleIcons_Pal2[];
 extern const u32 gGhostFrontPic[];
 extern const u16 gGhostPalette[];
 
+// Begin Magiya's Custom Additions
+#if P_ENABLE_CUSTOMS
+#include "custom_graphics.h"
+#endif // P_ENABLE_CUSTOMS
+// End Magiya's Custom Additions
+
 #endif //GUARD_GRAPHICS_H
