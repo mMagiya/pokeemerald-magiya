@@ -1,5 +1,4 @@
 MossdeepCity_Gym_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_Gym_OnTransition
 	.byte 0
 
 MossdeepCity_Gym_EventScript_SetSwitch4Metatiles::
