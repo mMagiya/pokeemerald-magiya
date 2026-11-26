@@ -76,7 +76,8 @@
     "gMapGroup_IndoorSixIslandRoute_Frlg",
     "gMapGroup_IndoorSevenIslandRoute_Frlg",
     "gMapGroup_InfiniteTowns",
-    "gMapGroup_InfiniteRoutes"
+    "gMapGroup_InfiniteRoutes",
+    "gMapGroup_IndoorTwilightTown"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1168,5 +1169,8 @@
   ],
   "gMapGroup_InfiniteRoutes": [
     "Route901"
+  ],
+  "gMapGroup_IndoorTwilightTown": [
+    "TwilightTown_Apothecary"
   ]
 }

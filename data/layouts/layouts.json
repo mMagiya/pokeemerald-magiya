@@ -9343,6 +9343,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route901/border.bin",
       "blockdata_filepath": "data/layouts/Route901/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWILIGHT_TOWN_APOTHECARY",
+      "name": "TwilightTown_Apothecary_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/TwilightTown_Apothecary/border.bin",
+      "blockdata_filepath": "data/layouts/TwilightTown_Apothecary/map.bin"
     }
   ]
 }
