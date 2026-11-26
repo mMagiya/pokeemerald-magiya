@@ -1,0 +1,37 @@
+raw `
+
+`
+
+mapscripts TwilightTown_MapScripts {
+    
+}
+
+script SIGN_TWILIGHT_TOWNSIGN {
+    lockall
+    msgbox("TWILIGHT TOWN")
+    releaseall
+}
+
+script SIGN_TWILIGHT_ABANDONEDSHACK {
+    lockall
+    msgbox("CAUTION: Abandoned!")
+    releaseall
+}
+
+script SIGN_TWILIGHT_HOUSE {
+    lockall
+    msgbox("It's a house.")
+    releaseall
+}
+
+script SIGN_TWILIGHT_901 {
+    lockall
+    msgbox("Route 901 ahead!")
+    releaseall
+}
+
+script SIGN_TWILIGHT_APOTHECARY {
+    lockall
+    msgbox("APOTHECARY: We'll cure what ails you!")
+    releaseall
+}
